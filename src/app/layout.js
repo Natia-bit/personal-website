@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
         </div>
 
         <footer className={layoutStyles.footer}>
-          Made with blood, sweat and tears
+          Made with bugs, sweat and tears
         </footer>
       </body>
     </html>

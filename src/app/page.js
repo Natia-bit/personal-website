@@ -3,6 +3,7 @@ import SectionLink from "@/components/SectionLink";
 import styles from "./page.module.css";
 import SkillSlider from "@/components/SkillSlider";
 import Image from "next/image";
+import MagneticClipImage from "@/components/MagneticClipImage";
 
 const skillData = [
   { skillName: "Java", skillLevel: "7", iconSrc: "/skills/java.png" },
@@ -93,12 +94,12 @@ export default function Home() {
                 />
               ))}
             </div>
-            <Image
-              src="/memes/sheldon.jpg"
-              alt="meme"
-              className={styles.meme}
-              width={300}
-              height={300}
+
+            <MagneticClipImage
+              imageSrc="/memes/sheldon.jpg"
+              imageWidth={400}
+              imageHeight={400}
+              rotation={4}
             />
           </div>
         </ContentDisplay>
