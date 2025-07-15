@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  /* flex-direction: column; */
+  min-height: 100vh;
+}
+
+.sidebar {
+  /* background-color: grey; */
+  width: 20%;
+  min-width: 200px;
+}
+
+.main {
+  flex: 1;
+  /* background-color: red; */
+  padding: 1.5em;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Account half screens */
+@media (max-width: 1200px) {
+  .sidebar {
+    width: 25%;
+  }
+}

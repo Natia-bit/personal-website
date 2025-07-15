@@ -1,0 +1,16 @@
+.link {
+  text-decoration: none;
+}
+
+.sectionLink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.label {
+  color: darkblue;
+  font-family: "Sue Ellen Francisco";
+  font-size: 24px;
+}
