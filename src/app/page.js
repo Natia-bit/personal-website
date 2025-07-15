@@ -64,7 +64,7 @@ export default function Home() {
             label="Skills"
           />
           <SectionLink
-            href="#work-experience"
+            href="#experience"
             iconSrc="/icons/work.png"
             label="Work Experience"
           />
@@ -100,9 +100,14 @@ export default function Home() {
               imageWidth={400}
               imageHeight={400}
               rotation={4}
+              clipColor="#FF0000"
             />
           </div>
         </ContentDisplay>
+      </section>
+
+      <section id="experience">
+        <ContentDisplay title={"Experiance"} />
       </section>
     </div>
   );

@@ -15,12 +15,5 @@
 .skillList {
   flex: 1;
   min-width: 80px;
-}
-
-.meme {
-  flex: 0 0 40%;
-  width: 300px;
-  height: auto;
-  border-radius: 8px;
-  rotate: 2deg;
+  margin-right: 5em;
 }
