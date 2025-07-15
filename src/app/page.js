@@ -48,33 +48,86 @@ export default function Home() {
         </nav>
       </ContentDisplay>
 
-      <ContentDisplay title="Skills" className={styles.skillContainer}>
-        <div className={styles.skillList}>
-          <SkillSlider
-            skillName="Java"
-            skillLevel="7"
-            iconSrc="/skills/java.png"
-          />
-          <SkillSlider
-            skillName="React"
-            skillLevel="6"
-            iconSrc="/skills/react.png"
-          />
-        </div>
-        <Image
-          src="/memes/clipboard.svg"
-          alt="clip"
-          width={30}
-          height={30}
-        ></Image>
-        <Image
-          src="/memes/sheldon.jpg"
-          alt="meme"
-          className={styles.image}
-          width={300}
-          height={300}
-        />
-      </ContentDisplay>
+      <section id="skills">
+        <ContentDisplay title="Skills">
+          <div className={styles.skillContainer}>
+            <div className={styles.skillList}>
+              <SkillSlider
+                skillName="Java"
+                skillLevel="7"
+                iconSrc="/skills/java.png"
+              />
+              <SkillSlider
+                skillName="Python"
+                skillLevel="4"
+                iconSrc="/skills/python.svg"
+              />
+              <SkillSlider
+                skillName="Spring Boot"
+                skillLevel="6"
+                iconSrc="/skills/spring-boot.svg"
+              />
+              <SkillSlider
+                skillName="Django"
+                skillLevel="4"
+                iconSrc="/skills/django.png"
+              />
+              <SkillSlider
+                skillName="SQL (MySQL/Postgres)"
+                skillLevel="7"
+                iconSrc="/skills/sql.png"
+              />
+              <SkillSlider
+                skillName="CSS"
+                skillLevel="6"
+                iconSrc="/skills/css.png"
+              />
+              <SkillSlider
+                skillName="HTML"
+                skillLevel="7"
+                iconSrc="/skills/html.png"
+              />
+              <SkillSlider
+                skillName="JavaScript"
+                skillLevel="6"
+                iconSrc="/skills/javascript.png"
+              />
+              <SkillSlider
+                skillName="React (Next.js)"
+                skillLevel="6"
+                iconSrc="/skills/react.png"
+              />
+              <SkillSlider
+                skillName="Vue (Nuxt.js)"
+                skillLevel="4"
+                iconSrc="/skills/vuejs.png"
+              />
+              <SkillSlider
+                skillName="Docker"
+                skillLevel="5"
+                iconSrc="/skills/docker.png"
+              />
+              <SkillSlider
+                skillName="Git"
+                skillLevel="8"
+                iconSrc="/skills/git.png"
+              />
+              <SkillSlider
+                skillName="GitHub"
+                skillLevel="8"
+                iconSrc="/skills/github.png"
+              />
+            </div>
+            <Image
+              src="/memes/sheldon.jpg"
+              alt="meme"
+              className={styles.meme}
+              width={300}
+              height={300}
+            />
+          </div>
+        </ContentDisplay>
+      </section>
     </div>
   );
 }

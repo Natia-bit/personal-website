@@ -6,14 +6,24 @@
 
 .sidebar {
   /* background-color: grey; */
+  position: fixed;
   width: 20%;
   min-width: 200px;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 200px;
+  padding: 1rem;
+  overflow-y: auto;
+  z-index: 1000;
 }
 
 .main {
+  margin-left: 300px;
   flex: 1;
   /* background-color: red; */
   padding: 1.5em;
+  min-width: 0;
 }
 
 .footer {

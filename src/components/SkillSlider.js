@@ -12,7 +12,7 @@ export default function SkillSlider({ skillName, skillLevel, iconSrc }) {
         className={styles.image}
       />
       <div className={styles.skillBar}>
-        <label className={styles.name}>{skillName.toUpperCase()}</label>
+        <label className={styles.name}>{skillName}</label>
         <div className={styles.sliderWrapper}>
           <input
             className={styles.range}
