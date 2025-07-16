@@ -1,0 +1,22 @@
+.sketchy {
+  /* align-self: center; */
+  background-color: transparent;
+  /* background-position: 0 90%; */
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  cursor: default;
+  display: inline-block;
+  font-size: 0.8rem;
+  line-height: 20px;
+  padding: 0.3rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  /* transition: all 235ms ease-in-out; */
+  /* touch-action: manipulation; */
+}

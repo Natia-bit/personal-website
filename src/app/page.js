@@ -4,37 +4,38 @@ import styles from "./page.module.css";
 import SkillSlider from "@/components/SkillSlider";
 import Image from "next/image";
 import MagneticClipImage from "@/components/MagneticClipImage";
+import TechnologiesUsed from "@/components/TechnologiesUsed";
 
 const skillData = [
-  { skillName: "Java", skillLevel: "7", iconSrc: "/skills/java.png" },
-  { skillName: "Python", skillLevel: "4", iconSrc: "/skills/python.svg" },
+  { skillName: "Java", skillLevel: "6", iconSrc: "/skills/java.png" },
+  { skillName: "Python", skillLevel: "3", iconSrc: "/skills/python.svg" },
   {
     skillName: "Spring Boot",
     skillLevel: "6",
     iconSrc: "/skills/spring-boot.svg",
   },
-  { skillName: "Django", skillLevel: "4", iconSrc: "/skills/django.png" },
+  { skillName: "Django", skillLevel: "3", iconSrc: "/skills/django.png" },
   {
     skillName: "SQL (MySQL/Postgres)",
-    skillLevel: "7",
+    skillLevel: "6",
     iconSrc: "/skills/sql.png",
   },
-  { skillName: "CSS", skillLevel: "6", iconSrc: "/skills/css.png" },
-  { skillName: "HTML", skillLevel: "6", iconSrc: "/skills/html.png" },
+  { skillName: "CSS", skillLevel: "5", iconSrc: "/skills/css.png" },
+  { skillName: "HTML", skillLevel: "5", iconSrc: "/skills/html.png" },
   {
     skillName: "JavaScript",
-    skillLevel: "6",
+    skillLevel: "5",
     iconSrc: "/skills/javascript.png",
   },
   {
     skillName: "React (Next.js)",
-    skillLevel: "6",
+    skillLevel: "5",
     iconSrc: "/skills/react.png",
   },
-  { skillName: "Vue (Nuxt.js)", skillLevel: "4", iconSrc: "/skills/vuejs.png" },
-  { skillName: "Docker", skillLevel: "5", iconSrc: "/skills/docker.png" },
-  { skillName: "Git", skillLevel: "8", iconSrc: "/skills/git.png" },
-  { skillName: "GitHub", skillLevel: "8", iconSrc: "/skills/github.png" },
+  { skillName: "Vue (Nuxt.js)", skillLevel: "3", iconSrc: "/skills/vuejs.png" },
+  { skillName: "Docker", skillLevel: "3", iconSrc: "/skills/docker.png" },
+  { skillName: "Git", skillLevel: "7", iconSrc: "/skills/git.png" },
+  { skillName: "GitHub", skillLevel: "7", iconSrc: "/skills/github.png" },
 ];
 
 export default function Home() {
@@ -108,6 +109,7 @@ export default function Home() {
 
       <section id="experience">
         <ContentDisplay title={"Experiance"} />
+        <TechnologiesUsed skillName="Java"></TechnologiesUsed>
       </section>
     </div>
   );
