@@ -17,6 +17,8 @@
   border-bottom-right-radius: 225px 15px;
   border-top-left-radius: 255px 15px;
   border-top-right-radius: 15px 225px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   /* transition: all 235ms ease-in-out; */
   /* touch-action: manipulation; */
 }

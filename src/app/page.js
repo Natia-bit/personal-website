@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 import SkillSlider from "@/components/SkillSlider";
 import Image from "next/image";
 import MagneticClipImage from "@/components/MagneticClipImage";
-import TechnologiesUsed from "@/components/TechnologiesUsed";
+import ExperianceDisplay from "@/components/ExperianceDisplay";
 
 const skillData = [
   { skillName: "Java", skillLevel: "6", iconSrc: "/skills/java.png" },
@@ -36,6 +36,31 @@ const skillData = [
   { skillName: "Docker", skillLevel: "3", iconSrc: "/skills/docker.png" },
   { skillName: "Git", skillLevel: "7", iconSrc: "/skills/git.png" },
   { skillName: "GitHub", skillLevel: "7", iconSrc: "/skills/github.png" },
+];
+
+const workExperiance = [
+  {
+    startDate: "January 2025",
+    endDate: "Present",
+    jobTitle: "Software Developer",
+    location: "Cape Town",
+    company: "Freelance",
+    techUsed: [
+      "Java",
+      "Spring",
+      "Posgres",
+      "React",
+      "JavaScript",
+      "CSS",
+      "HTML",
+    ],
+    description: [
+      "Following my software engineering internship, I transitioned into a role building ad hoc software solutions. These solutions currently include: ",
+      " - An advertising website for a small independent bakery for a client.",
+      " - A tool for generating cutting lists with dimensions which can be used for joinery manufacturing. This is a MVP I am working on for myself and interested potential clients.",
+      "This involves creation of technical specifications detailing solutions to be implemented, as well as implementation of MVP in Java Spring with, dockerized Postgres database, enhanced testing methodologies including testcontainers, and React frontend.",
+    ],
+  },
 ];
 
 export default function Home() {
@@ -109,7 +134,10 @@ export default function Home() {
 
       <section id="experience">
         <ContentDisplay title={"Experiance"} />
-        <TechnologiesUsed skillName="Java"></TechnologiesUsed>
+
+        {workExperiance.map((job, idx) => (
+          <ExperianceDisplay key={idx} {...job} />
+        ))}
       </section>
     </div>
   );

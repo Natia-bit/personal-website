@@ -1,0 +1,42 @@
+.experianceContainer {
+  border: 3px solid black;
+  width: 90%;
+  height: auto;
+  margin: 0.5rem;
+  border-radius: 200px 5px 200px 5px / 5px 200px 5px 200px;
+  font-size: 0.95rem;
+  padding: 1rem;
+}
+
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainHeader h2 {
+  margin-bottom: 0;
+}
+
+.details {
+  font-weight: 700;
+  margin-top: 0.8rem;
+}
+
+.description {
+  list-style: none;
+  padding-left: 0;
+  padding-bottom: 1.5rem;
+  margin: 0;
+}
+.description li {
+  margin-left: 0;
+  padding-left: 0;
+  text-indent: 0;
+}
+
+.techUsed {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
