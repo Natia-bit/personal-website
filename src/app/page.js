@@ -136,7 +136,7 @@ export default function Home() {
         <ContentDisplay title={"Experiance"} />
 
         {workExperiance.map((job, idx) => (
-          <ExperianceDisplay key={idx} {...job} />
+          <ExperianceDisplay key={idx} {...job} initialExpanded={idx < 2} />
         ))}
       </section>
     </div>
