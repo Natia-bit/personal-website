@@ -28,7 +28,10 @@
   height: 10px;
   width: 100%;
   overflow: hidden;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+
+  border: 2px solid black;
+  border-radius: 10px 25px 10px 25px / 25px 10px 25px 10px;
+  /* box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2); */
 }
 
 .range {
@@ -54,17 +57,16 @@
     to right,
     darkblue var(--skill-level),
     #ffffff var(--skill-level)
-  ); /* Purple for filled, white for unfilled */
-  border: 1px solid black;
-  border-radius: 9999px;
+  );
+  border: none;
+  border-radius: 4px;
 }
 
-/* Thumb styling for WebKit browsers (Chrome, Safari) */
 .range::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 0;
-  height: 0;
+  width: 0; /* Make thumb invisible */
+  height: 0; /* Make thumb invisible */
   background: transparent;
   box-shadow: none;
   border: none;
@@ -78,14 +80,15 @@
     to right,
     darkblue var(--skill-level),
     #ffffff var(--skill-level)
-  ); /* Purple for filled, white for unfilled */
-  border-radius: 9999px;
+  );
+  border: none;
+  border-radius: 5px;
 }
 
 /* Thumb styling for Firefox */
 .range::-moz-range-thumb {
-  width: 0; /* Make thumb invisible */
-  height: 0; /* Make thumb invisible */
+  width: 0;
+  height: 0;
   background: transparent;
   border: none;
 }
@@ -101,13 +104,13 @@
 
 /* Fill styling for IE */
 .range::-ms-fill-lower {
-  background: darkblue;
-  border-radius: 9999px;
+  background: darkblue; /* Filled part */
+  border-radius: 4px; /* Small, consistent radius for inner fill */
 }
 
 .range::-ms-fill-upper {
-  background: #ffffff;
-  border-radius: 9999px;
+  background: #ffffff; /* Unfilled part */
+  border-radius: 4px; /* Small, consistent radius for inner fill */
 }
 
 /* Thumb styling for IE */
