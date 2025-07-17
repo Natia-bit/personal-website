@@ -20,22 +20,28 @@ const skillData = [
     skillLevel: "6",
     iconSrc: "/skills/sql.png",
   },
-  { skillName: "CSS", skillLevel: "5", iconSrc: "/skills/css.png" },
-  { skillName: "HTML", skillLevel: "5", iconSrc: "/skills/html.png" },
-  {
-    skillName: "JavaScript",
-    skillLevel: "5",
-    iconSrc: "/skills/javascript.png",
-  },
   {
     skillName: "React (Next.js)",
     skillLevel: "5",
     iconSrc: "/skills/react.png",
   },
   { skillName: "Vue (Nuxt.js)", skillLevel: "3", iconSrc: "/skills/vuejs.png" },
-  { skillName: "Docker", skillLevel: "3", iconSrc: "/skills/docker.png" },
+  {
+    skillName: "JavaScript",
+    skillLevel: "5",
+    iconSrc: "/skills/javascript.png",
+  },
+  { skillName: "CSS", skillLevel: "5", iconSrc: "/skills/css.png" },
+  { skillName: "HTML", skillLevel: "5", iconSrc: "/skills/html.png" },
+
   { skillName: "Git", skillLevel: "7", iconSrc: "/skills/git.png" },
   { skillName: "GitHub", skillLevel: "7", iconSrc: "/skills/github.png" },
+  { skillName: "Docker", skillLevel: "3", iconSrc: "/skills/docker.png" },
+  {
+    skillName: "Kubernetes",
+    skillLevel: "2",
+    iconSrc: "/skills/kubernetes.png",
+  },
 ];
 
 const workExperiance = [

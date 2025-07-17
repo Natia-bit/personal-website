@@ -1,9 +1,3 @@
-.SectionLinks {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 3em;
-}
-
 .skillContainer {
   display: flex;
   flex-direction: row;
@@ -15,6 +9,51 @@
 
 .skillList {
   flex: 1;
-  min-width: 80px;
+  min-width: 250px;
   margin-right: 5em;
+
+  /* Multi column ? */
+  column-count: 3;
+  column-gap: 3rem;
+}
+
+.SectionLinks {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3em;
+}
+
+.skillList > * {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+@media (max-width: 1440px) {
+  .skillList {
+    column-count: 1;
+    column-gap: unset;
+    max-width: 400px;
+    margin-right: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .skillContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .skillList {
+    column-count: 1;
+    min-width: unset;
+    width: 90%;
+    margin-right: 0;
+  }
+
+  .skillContainer .MagneticClipImage {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+  }
 }

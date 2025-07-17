@@ -4,6 +4,11 @@ h1 {
   font-family: "Sue Ellen Francisco";
 }
 
+h2,
+h3 {
+  font-family: "Sue Ellen Francisco";
+}
+
 body {
   font-family: "Lato";
   font-size: large;
