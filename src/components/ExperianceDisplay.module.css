@@ -18,6 +18,7 @@
   margin-bottom: 0;
   margin-top: 0;
 }
+
 .dateAndToggleButton {
   display: flex;
   align-items: center;
@@ -45,4 +46,57 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.toggleButton {
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+}
+
+.toggleIcon {
+  display: block;
+  line-height: 1;
+  transition: transform 0.5s ease-in-out;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.toggleButton:hover .toggleIcon {
+  transform: rotate(180deg);
+}
+
+.toggleButton:after {
+  content: "";
+  background-color: #ffe54c;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  transition: 0.2s;
+}
+
+.toggleButton:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .toggleButton {
+    padding: 6px 25px 6px;
+  }
 }

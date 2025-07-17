@@ -33,7 +33,13 @@ export default function ExperianceDisplay({
             className={styles.toggleButton}
             aria-label={expanded ? "Collapse" : "Expand"}
           >
-            {expanded ? "-" : "+"}
+            <span
+              className={`${styles.toggleIcon} ${
+                expanded ? styles.toggleIconExpanded : ""
+              }`}
+            >
+              {expanded ? "-" : "+"}
+            </span>
           </button>
         </div>
       </div>
