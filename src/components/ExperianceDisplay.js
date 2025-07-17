@@ -23,8 +23,8 @@ export default function ExperianceDisplay({
   return (
     <div className={styles.experianceContainer}>
       <div className={styles.main}>
-        <div className={styles.mainHeader}>
-          <h2>{jobTitle}</h2>
+        <h2 className={styles.jobTitle}>{jobTitle}</h2>
+        <div className={styles.dateAndToggleButton}>
           <h3>
             {startDate} - {endDate}
           </h3>

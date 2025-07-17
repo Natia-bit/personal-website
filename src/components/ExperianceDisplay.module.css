@@ -5,7 +5,7 @@
   margin: 0.5rem;
   border-radius: 200px 5px 200px 5px / 5px 200px 5px 200px;
   font-size: 0.95rem;
-  padding: 0 1rem 1.5rem 1rem;
+  padding: 0 1rem 1rem 1rem;
 }
 
 .main {
@@ -14,17 +14,14 @@
   align-items: center;
 }
 
-.mainHeader {
+.jobTitle {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.dateAndToggleButton {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-top: 0;
-  padding-top: 0;
-}
-
-.mainHeader h2 {
-  margin-bottom: 0;
-  margin-top: 0;
 }
 
 .details {
