@@ -1,0 +1,41 @@
+[
+  { "skillName": "Java", "skillLevel": "6", "iconSrc": "/skills/java.png" },
+  { "skillName": "Python", "skillLevel": "3", "iconSrc": "/skills/python.svg" },
+  {
+    "skillName": "Spring Boot",
+    "skillLevel": "6",
+    "iconSrc": "/skills/spring-boot.svg"
+  },
+  { "skillName": "Django", "skillLevel": "3", "iconSrc": "/skills/django.png" },
+  {
+    "skillName": "SQL (MySQL/Postgres)",
+    "skillLevel": "6",
+    "iconSrc": "/skills/sql.png"
+  },
+  {
+    "skillName": "React (Next.js)",
+    "skillLevel": "5",
+    "iconSrc": "/skills/react.png"
+  },
+  {
+    "skillName": "Vue (Nuxt.js)",
+    "skillLevel": "3",
+    "iconSrc": "/skills/vuejs.png"
+  },
+  {
+    "skillName": "JavaScript",
+    "skillLevel": "5",
+    "iconSrc": "/skills/javascript.png"
+  },
+  { "skillName": "CSS", "skillLevel": "5", "iconSrc": "/skills/css.png" },
+  { "skillName": "HTML", "skillLevel": "5", "iconSrc": "/skills/html.png" },
+
+  { "skillName": "Git", "skillLevel": "7", "iconSrc": "/skills/git.png" },
+  { "skillName": "GitHub", "skillLevel": "7", "iconSrc": "/skills/github.png" },
+  { "skillName": "Docker", "skillLevel": "3", "iconSrc": "/skills/docker.png" },
+  {
+    "skillName": "Kubernetes",
+    "skillLevel": "2",
+    "iconSrc": "/skills/kubernetes.png"
+  }
+]

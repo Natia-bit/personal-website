@@ -6,68 +6,8 @@ import Image from "next/image";
 import MagneticClipImage from "@/components/MagneticClipImage";
 import ExperianceDisplay from "@/components/ExperianceDisplay";
 
-const skillData = [
-  { skillName: "Java", skillLevel: "6", iconSrc: "/skills/java.png" },
-  { skillName: "Python", skillLevel: "3", iconSrc: "/skills/python.svg" },
-  {
-    skillName: "Spring Boot",
-    skillLevel: "6",
-    iconSrc: "/skills/spring-boot.svg",
-  },
-  { skillName: "Django", skillLevel: "3", iconSrc: "/skills/django.png" },
-  {
-    skillName: "SQL (MySQL/Postgres)",
-    skillLevel: "6",
-    iconSrc: "/skills/sql.png",
-  },
-  {
-    skillName: "React (Next.js)",
-    skillLevel: "5",
-    iconSrc: "/skills/react.png",
-  },
-  { skillName: "Vue (Nuxt.js)", skillLevel: "3", iconSrc: "/skills/vuejs.png" },
-  {
-    skillName: "JavaScript",
-    skillLevel: "5",
-    iconSrc: "/skills/javascript.png",
-  },
-  { skillName: "CSS", skillLevel: "5", iconSrc: "/skills/css.png" },
-  { skillName: "HTML", skillLevel: "5", iconSrc: "/skills/html.png" },
-
-  { skillName: "Git", skillLevel: "7", iconSrc: "/skills/git.png" },
-  { skillName: "GitHub", skillLevel: "7", iconSrc: "/skills/github.png" },
-  { skillName: "Docker", skillLevel: "3", iconSrc: "/skills/docker.png" },
-  {
-    skillName: "Kubernetes",
-    skillLevel: "2",
-    iconSrc: "/skills/kubernetes.png",
-  },
-];
-
-const workExperiance = [
-  {
-    startDate: "January 2025",
-    endDate: "Present",
-    jobTitle: "Software Developer",
-    location: "Cape Town",
-    company: "Freelance",
-    techUsed: [
-      "Java",
-      "Spring",
-      "Posgres",
-      "React",
-      "JavaScript",
-      "CSS",
-      "HTML",
-    ],
-    description: [
-      "Following my software engineering internship, I transitioned into a role building ad hoc software solutions. These solutions currently include: ",
-      " - An advertising website for a small independent bakery for a client.",
-      " - A tool for generating cutting lists with dimensions which can be used for joinery manufacturing. This is a MVP I am working on for myself and interested potential clients.",
-      "This involves creation of technical specifications detailing solutions to be implemented, as well as implementation of MVP in Java Spring with, dockerized Postgres database, enhanced testing methodologies including testcontainers, and React frontend.",
-    ],
-  },
-];
+import workExperiance from "../data/workExperiance.json";
+import skillData from "../data/skillData.json";
 
 export default function Home() {
   return (
