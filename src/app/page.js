@@ -78,12 +78,14 @@ export default function Home() {
         </ContentDisplay>
       </section>
 
-      <section id="experience">
+      <section id="experience" className={styles.experienceContainer}>
         <ContentDisplay title={"Experiance"} />
 
-        {workExperiance.map((job, idx) => (
-          <ExperianceDisplay key={idx} {...job} initialExpanded={idx < 2} />
-        ))}
+        <div className={styles.experienceContainerWrapper}>
+          {workExperiance.map((job, idx) => (
+            <ExperianceDisplay key={idx} {...job} initialExpanded={idx < 2} />
+          ))}
+        </div>
       </section>
     </div>
   );
