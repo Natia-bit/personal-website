@@ -7,6 +7,10 @@ import ExperianceDisplay from "@/components/ExperianceDisplay";
 
 import workExperiance from "../data/workExperiance.json";
 import skillData from "../data/skillData.json";
+import information from "../data/perosnal-information.json";
+import presence from "../data/perosnal-presence.json";
+import interests from "../data/perosnal-interests.json";
+import PostIt from "@/components/PostIt";
 
 export default function Home() {
   return (
@@ -92,12 +96,59 @@ export default function Home() {
       </section>
 
       <section id="personal-details">
-        <ContentDisplay title={"Personal Details"}>
-          <h3>Nationality & Residency</h3>
-          <p>Nationality: Greek</p>
-          <h3>Languages</h3>
-          <p>Residency: Permanent resident of South Africa</p>
-        </ContentDisplay>
+        <ContentDisplay title={"Personal Details"} />
+        <div>
+          <h2>Persoanl Information</h2>
+          <PostIt title="Contact">
+            <p>email: {information.contact.email}</p>
+          </PostIt>
+
+          <PostIt title="Languages">
+            {information.languages.map((lang, i) => (
+              <p key={i}>
+                {lang.language}: {lang.level}
+              </p>
+            ))}
+          </PostIt>
+
+          <PostIt title="Location">
+            <p>{information.location}</p>
+          </PostIt>
+
+          <PostIt title="Legal">
+            {information.legal.map((item, i) => (
+              <p key={i}>
+                {item.status}: {item.description}
+              </p>
+            ))}
+          </PostIt>
+        </div>
+        <div>
+          <h3>Resume</h3>
+          <div>Download CV</div>
+        </div>
+        <div>
+          <h3>Dev Presence</h3>
+          {presence.map((profile, i) => (
+            <PostIt key={i}>
+              <span>{profile.name}: </span>
+              <a href={profile.link} target="_blank" rel="noopener noreferrer">
+                {profile.link || "Link not provided"}
+              </a>
+            </PostIt>
+          ))}
+        </div>
+        <div>
+          <h3>Interests</h3>
+          <PostIt>
+            {interests.map((item, i) => (
+              <div key={i}>
+                <label>{item.name}</label>
+                <p>{item.description}</p>
+              </div>
+            ))}
+          </PostIt>
+        </div>
       </section>
     </div>
   );
