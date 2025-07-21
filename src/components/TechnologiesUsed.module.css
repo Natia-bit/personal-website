@@ -17,4 +17,12 @@
   border-top-right-radius: 15px 225px;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  margin-right: 0.5em;
 }

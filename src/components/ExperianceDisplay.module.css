@@ -20,6 +20,12 @@
   font-size: 1.8em;
 }
 
+.company {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: grey;
+}
+
 .dateAndToggleButton {
   display: flex;
   align-items: center;

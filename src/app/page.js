@@ -2,7 +2,6 @@ import ContentDisplay from "@/components/ContentDisplay";
 import SectionLink from "@/components/SectionLink";
 import styles from "./page.module.css";
 import SkillSlider from "@/components/SkillSlider";
-import Image from "next/image";
 import MagneticClipImage from "@/components/MagneticClipImage";
 import ExperianceDisplay from "@/components/ExperianceDisplay";
 
@@ -20,7 +19,11 @@ export default function Home() {
           decided to follow my old and not forgotten dream and learn how to code
           and transition to the tech industry, while I maintained part time work
           as designer to close clientele. Since then I have been taking various
-          courses and developing small encapsulated projects.
+          courses and developing small encapsulated projects. At the end of 2024
+          I was fortunate to be exposed to the tech industry and view at first
+          hand the development cycle during the internship. After the internship
+          I continue expanding my knowledge by working on small projects and
+          looking for a new role.
         </p>
         <p>
           At the end of 2024 I was fortunate to be exposed to the tech industry
@@ -86,6 +89,15 @@ export default function Home() {
             <ExperianceDisplay key={idx} {...job} initialExpanded={idx < 2} />
           ))}
         </div>
+      </section>
+
+      <section id="personal-details">
+        <ContentDisplay title={"Personal Details"}>
+          <h3>Nationality & Residency</h3>
+          <p>Nationality: Greek</p>
+          <h3>Languages</h3>
+          <p>Residency: Permanent resident of South Africa</p>
+        </ContentDisplay>
       </section>
     </div>
   );

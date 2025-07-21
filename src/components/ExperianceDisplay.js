@@ -23,7 +23,10 @@ export default function ExperianceDisplay({
   return (
     <div className={styles.experianceContainer}>
       <div className={styles.main}>
-        <h2 className={styles.jobTitle}>{jobTitle}</h2>
+        <h2 className={styles.jobTitle}>
+          {jobTitle} <span className={styles.company}> @ {company}</span>
+        </h2>
+
         <div className={styles.dateAndToggleButton}>
           <h3>
             {startDate} - {endDate}
@@ -58,7 +61,11 @@ export default function ExperianceDisplay({
 
           <div className={styles.techUsed}>
             {techUsed.map((skill, idx) => (
-              <TechnologiesUsed key={idx} skillName={skill} />
+              <TechnologiesUsed
+                key={idx}
+                iconSrc={skill.iconSrc}
+                skillName={skill.skill}
+              />
             ))}
           </div>
         </div>
