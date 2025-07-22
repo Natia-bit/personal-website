@@ -59,20 +59,20 @@ export default function PersonalDetails() {
         <h2>Dev Presence</h2>
         {presence.map((profile, i) => (
           <PostIt key={i}>
-            <span>{profile.name}: </span>
+            <span>{profile.name} </span>
             <a
               href={profile.link}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.link}
             >
-              {profile.link || "Oups! What happened to the link?"}
+              {"[Link]" || "Oups! What happened to the link?"}
               <div className={styles.iconContainer}>
                 <Image
                   src={profile.iconSrc}
                   alt={`${profile.name} icon`}
-                  width={70}
-                  height={70}
+                  width={60}
+                  height={60}
                   className={styles.icon}
                 ></Image>
               </div>
