@@ -16,7 +16,7 @@
 }
 
 .personalContainer h3 {
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
 .link {
@@ -56,6 +56,10 @@
   display: flex;
   justify-content: center;
   margin-top: 1em;
+}
+
+.description {
+  color: #555;
 }
 
 @media (min-width: 768px) {

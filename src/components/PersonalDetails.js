@@ -83,14 +83,12 @@ export default function PersonalDetails() {
 
       <div className={styles.interests}>
         <h2>Interests</h2>
-        <PostIt>
-          {interests.map((item, i) => (
-            <div key={i}>
-              <label>{item.name}</label>
-              <p>{item.description}</p>
-            </div>
-          ))}
-        </PostIt>
+        {interests.map((item, i) => (
+          <PostIt key={i}>
+            <label>{item.name}</label>
+            <p className={styles.description}>{item.description}</p>
+          </PostIt>
+        ))}
       </div>
     </div>
   );

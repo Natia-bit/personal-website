@@ -49,9 +49,9 @@ export default function Home() {
             label="Personal Details"
           />
           <SectionLink
-            href="#interests"
-            iconSrc="/icons/interests.png"
-            label="Interests"
+            href="#personal-details"
+            iconSrc="/icons/software.gif"
+            label="TEST"
           />
         </nav>
       </ContentDisplay>
@@ -82,18 +82,19 @@ export default function Home() {
       </section>
 
       <section id="experience" className={styles.experienceContainer}>
-        <ContentDisplay title={"Experiance"} />
-
-        <div className={styles.experienceContainerWrapper}>
-          {workExperiance.map((job, idx) => (
-            <ExperianceDisplay key={idx} {...job} initialExpanded={idx < 2} />
-          ))}
-        </div>
+        <ContentDisplay title={"Experiance"}>
+          <div className={styles.experienceContainerWrapper}>
+            {workExperiance.map((job, idx) => (
+              <ExperianceDisplay key={idx} {...job} initialExpanded={idx < 2} />
+            ))}
+          </div>
+        </ContentDisplay>
       </section>
 
       <section id="personal-details">
-        <ContentDisplay title={"Personal Details"} />
-        <PersonalDetails />
+        <ContentDisplay title={"Personal Details"}>
+          <PersonalDetails />
+        </ContentDisplay>
       </section>
     </div>
   );
