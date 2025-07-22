@@ -24,3 +24,21 @@
   flex-direction: column;
   align-items: center;
 }
+
+@media (min-width: 768px) {
+  .personalContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .personalContainer {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  }
+}
+
+@media (max-width: 767px) {
+  .personalContainer {
+    grid-template-columns: 1fr;
+  }
+}
