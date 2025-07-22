@@ -1,4 +1,5 @@
 import PostIt from "./PostIt";
+import Image from "next/image";
 
 import information from "../data/perosnal-information.json";
 import presence from "../data/perosnal-presence.json";
@@ -13,15 +14,6 @@ export default function PersonalDetails() {
         <PostIt title="Contact">
           <p>email: {information.contact.email}</p>
         </PostIt>
-
-        <PostIt title="Languages">
-          {information.languages.map((lang, i) => (
-            <p key={i}>
-              {lang.language}: {lang.level}
-            </p>
-          ))}
-        </PostIt>
-
         <PostIt title="Location">
           <p>{information.location}</p>
         </PostIt>
@@ -33,12 +25,33 @@ export default function PersonalDetails() {
             </p>
           ))}
         </PostIt>
+
+        <PostIt title="Languages">
+          {information.languages.map((lang, i) => (
+            <p key={i}>
+              {lang.language}: {lang.level}
+            </p>
+          ))}
+        </PostIt>
       </div>
 
       <div className={styles.resume}>
         <h2>Resume</h2>
         <PostIt>
-          <p>Download CV</p>
+          <p>Download CV...</p>
+          <a
+            href="/resume/cv.pdf"
+            download="Natisvili Natia CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/personal/download.svg"
+              alt={"download"}
+              width={60}
+              height={60}
+            ></Image>
+          </a>
         </PostIt>
       </div>
 
@@ -47,8 +60,22 @@ export default function PersonalDetails() {
         {presence.map((profile, i) => (
           <PostIt key={i}>
             <span>{profile.name}: </span>
-            <a href={profile.link} target="_blank" rel="noopener noreferrer">
-              {profile.link || "Link not provided"}
+            <a
+              href={profile.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.link}
+            >
+              {profile.link || "Oups! What happened to the link?"}
+              <div className={styles.iconContainer}>
+                <Image
+                  src={profile.iconSrc}
+                  alt={`${profile.name} icon`}
+                  width={70}
+                  height={70}
+                  className={styles.icon}
+                ></Image>
+              </div>
             </a>
           </PostIt>
         ))}

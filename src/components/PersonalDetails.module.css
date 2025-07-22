@@ -19,21 +19,69 @@
   font-size: 1.3em;
 }
 
+.link {
+  color: black;
+  text-decoration: none;
+}
+
 .information {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.information,
+.resume,
+.presence {
+  border-right: 2px solid black;
+  padding-right: 1rem;
+}
+
+.information h2,
+.resume h2,
+.presence h2,
+.resume h2,
+.interests h2 {
+  border-bottom: 2px solid black;
+  min-width: 300px;
+}
+
+.resume a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
 @media (min-width: 768px) {
   .personalContainer {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .information,
+  .presence {
+    border-right: 2px solid black;
+    padding-right: 1rem;
+  }
+
+  .resume {
+    border: none;
   }
 }
 
 @media (min-width: 1200px) {
   .personalContainer {
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .information,
+  .resume,
+  .presence {
+    border-right: 2px solid black;
+    padding-right: 1rem;
   }
 }
 

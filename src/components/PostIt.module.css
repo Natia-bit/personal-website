@@ -1,7 +1,7 @@
 .postItContainer {
   background: #ffc;
   padding: 1em 1.5em;
-  margin-top: 1.5em;
+  margin-bottom: 2.5em;
   box-shadow: 2px 2px 5px rgba(33, 33, 33, 0.5);
   transform: rotate(0.5deg);
   transition: transform 0.2s linear;
