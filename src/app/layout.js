@@ -15,7 +15,7 @@ const lato = Lato({
   variable: "--font-lato",
 });
 
-import layoutStyles from "./layout.module.css";
+import styles from "./layout.module.css";
 
 export const metadata = {
   title: "Natia Natisvili",
@@ -24,17 +24,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <div className={layoutStyles.container}>
-          <aside className={layoutStyles.sidebar}>
-            <Navigation />
-          </aside>
-          <main className={layoutStyles.main}>{children}</main>
-        </div>
+      <body className={styles.body}>
+        <div className={styles.wrapper}>
+          <div className={styles.container}>
+            <aside className={styles.sidebar}>
+              <Navigation />
+            </aside>
+            <main className={styles.main}>{children}</main>
+          </div>
 
-        <footer className={layoutStyles.footer}>
-          Made with bugs, sweat and tears
-        </footer>
+          <footer className={styles.footer}>
+            Made with bugs, sweat and tears
+          </footer>
+        </div>
       </body>
     </html>
   );

@@ -1,0 +1,53 @@
+.postItContainer {
+  background: #ffc;
+  padding: 1em 1.5em;
+  margin-top: 1.5em;
+  box-shadow: 2px 2px 5px rgba(33, 33, 33, 0.5);
+  transform: rotate(0.5deg);
+  transition: transform 0.2s linear;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+
+  min-width: 250px;
+  min-height: 180px;
+  box-sizing: border-box;
+}
+
+.postItContainer:nth-child(even) {
+  transform: rotate(-0.7deg);
+}
+
+.postItContainer[data-color="yellow"] {
+  background: #ffc;
+}
+
+.postItContainer[data-color="blue"] {
+  background: #a8dadc;
+}
+
+.postItContainer[data-color="light-blue"] {
+  background: #e0f2f7;
+}
+
+.postItContainer h3 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
+  color: #333;
+  text-align: center;
+}
+
+.postItContainer .text {
+  font-size: 0.8em;
+  color: #555;
+  text-align: left;
+  width: 100%;
+}
+
+.postItContainer .text {
+  margin: 0.2rem 0;
+}
