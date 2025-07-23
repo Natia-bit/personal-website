@@ -3,14 +3,14 @@ import styles from "./PostIt.module.css";
 
 export default function PostIt({
   title,
-  color = "yellow",
+  color = "#ffc",
   iconSrc,
   imageWidth,
   imageHeight,
   children,
 }) {
   return (
-    <div className={styles.postItContainer}>
+    <div className={styles.postItContainer} style={{ backgroundColor: color }}>
       <h3>
         {iconSrc && (
           <Image

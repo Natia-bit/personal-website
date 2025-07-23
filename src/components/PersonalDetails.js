@@ -53,6 +53,13 @@ export default function PersonalDetails() {
             ></Image>
           </a>
         </PostIt>
+
+        <PostIt color="#90D5FF">
+          <p>99 little bugs in the code, </p>
+          <p>99 little bugs, </p>
+          <p>Patch one down, compile it around, </p>
+          <p>137 little bugs in the code... </p>
+        </PostIt>
       </div>
 
       <div className={styles.presence}>
