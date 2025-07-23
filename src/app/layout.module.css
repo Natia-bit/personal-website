@@ -22,7 +22,7 @@
 }
 
 .bugOne {
-  margin-left: -15px;
+  margin-left: -10px;
   position: relative;
   top: -3px;
   z-index: 1;
@@ -35,6 +35,15 @@
   position: relative;
   top: 10px;
   z-index: 2;
+}
+
+.botlLeft {
+  margin-right: 50px;
+}
+
+.boltRight {
+  margin-left: 50px;
+  position: relative;
 }
 
 /* Account half screens */

@@ -17,11 +17,12 @@ body {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: auto;
   padding: 1rem;
   text-align: center;
-  /* background-color: #333;
-  color: white; */
-  /* background-color: #333; */
-  /* color: white; */
+  background-color: #222;
+  color: white;
 }
