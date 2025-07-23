@@ -1,19 +1,7 @@
 import Navigation from "@/components/Navigation";
-import { Sue_Ellen_Francisco, Lato } from "next/font/google";
 import "./globals.css";
-
-const sueEllenFrancisco = Sue_Ellen_Francisco({
-  weight: "400",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const lato = Lato({
-  subsets: ["latin"],
-  weight: ["100", "300", "400", "700", "900"],
-  display: "swap",
-  variable: "--font-lato",
-});
+import Image from "next/image";
+import Bug from "@/components/Bug";
 
 import styles from "./layout.module.css";
 
@@ -33,8 +21,15 @@ export default function RootLayout({ children }) {
             <main className={styles.main}>{children}</main>
           </div>
 
-          <footer className={styles.footer}>
-            Made with bugs, sweat and tears
+          <footer>
+            Made with bugs
+            <span className={styles.bugOne}>
+              <Bug />
+            </span>
+            <span className={styles.bugTwo}>
+              <Bug />
+            </span>
+            , sweat and tears.
           </footer>
         </div>
       </body>

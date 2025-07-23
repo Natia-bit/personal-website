@@ -1,18 +1,7 @@
-/* .wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-} */
-
 .container {
   display: flex;
   flex: 1;
 }
-
-/* .main {
-  flex: 1;
-  padding: 2rem;
-} */
 
 .sidebar {
   position: fixed;
@@ -32,12 +21,20 @@
   min-width: 0;
 }
 
-.footer {
-  margin-top: auto;
-  padding: 1rem;
-  background-color: #333;
-  color: white;
-  text-align: center;
+.bugOne {
+  margin-left: -15px;
+  position: relative;
+  top: -3px;
+  z-index: 1;
+}
+
+.bugTwo {
+  margin-left: -18px;
+  display: inline-block;
+  transform: rotate(45deg);
+  position: relative;
+  top: 10px;
+  z-index: 2;
 }
 
 /* Account half screens */
