@@ -25,12 +25,6 @@ export default function Home() {
           I continue expanding my knowledge by working on small projects and
           looking for a new role.
         </p>
-        <p>
-          At the end of 2024 I was fortunate to be exposed to the tech industry
-          and view at first hand the development cycle during the internship.
-          After the internship I continue expanding my knowledge by working on
-          small projects and looking for a new role.{" "}
-        </p>
 
         <nav className={styles.SectionLinks}>
           <SectionLink
