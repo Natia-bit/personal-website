@@ -35,23 +35,21 @@ export default function Home() {
         <nav className={styles.SectionLinks}>
           <SectionLink
             href="#skills"
-            iconSrc="/icons/handrawn-gears.png"
+            iconSrc="/icons/settings.png"
+            animatedSrc="/icons/settings.gif"
             label="Skills"
           />
           <SectionLink
             href="#experience"
-            iconSrc="/icons/work.png"
+            iconSrc="/icons/boss.png"
+            animatedSrc="/icons/boss.gif"
             label="Work Experience"
           />
           <SectionLink
             href="#personal-details"
-            iconSrc="/icons/person.png"
+            iconSrc="/icons/profile.png"
+            animatedSrc="/icons/profile.gif"
             label="Personal Details"
-          />
-          <SectionLink
-            href="#personal-details"
-            iconSrc="/icons/software.gif"
-            label="TEST"
           />
         </nav>
       </ContentDisplay>
