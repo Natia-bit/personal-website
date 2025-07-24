@@ -54,7 +54,7 @@ export default function PersonalDetails() {
           </a>
         </PostIt>
 
-        <PostIt color="#90D5FF">
+        <PostIt color="var(--color-muted)">
           <p>99 little bugs in the code, </p>
           <p>99 little bugs, </p>
           <p>Patch one down, compile it around, </p>

@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./PostIt.module.css";
+import { useState, useEffect } from "react";
 
 export default function PostIt({
   title,
@@ -9,8 +12,28 @@ export default function PostIt({
   imageHeight,
   children,
 }) {
+  const [resolvedColor, setResolvedColor] = useState(color);
+
+  useEffect(() => {
+    if (color.startsWith("var(")) {
+      const varName = color.match(/var\((--[^)]+)\)/)?.[1];
+      if (varName) {
+        const rootStyles = getComputedStyle(document.documentElement);
+        const value = rootStyles.getPropertyValue(varName);
+        if (value) {
+          setResolvedColor(value.trim());
+        }
+      }
+    } else {
+      setResolvedColor(color);
+    }
+  }, [color]);
+
   return (
-    <div className={styles.postItContainer} style={{ backgroundColor: color }}>
+    <div
+      className={styles.postItContainer}
+      style={{ backgroundColor: resolvedColor }}
+    >
       <h3>
         {iconSrc && (
           <Image

@@ -20,7 +20,7 @@
 }
 
 .link {
-  color: black;
+  color: var(--color-text-main);
   text-decoration: none;
 }
 
@@ -36,7 +36,7 @@
 .information,
 .resume,
 .presence {
-  border-right: 2px solid black;
+  border-right: 2px solid var(--color-dark);
   padding-right: 1rem;
 }
 
@@ -45,7 +45,7 @@
 .presence h2,
 .resume h2,
 .interests h2 {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--color-dark);
   min-width: 300px;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .description {
-  color: #555;
+  color: var(--color-grey);
 }
 
 @media (min-width: 768px) {
@@ -71,7 +71,7 @@
   }
   .information,
   .presence {
-    border-right: 2px solid black;
+    border-right: 2px solid var(--color-dark);
     padding-right: 1rem;
   }
 
@@ -87,7 +87,7 @@
   .information,
   .resume,
   .presence {
-    border-right: 2px solid black;
+    border-right: 2px solid var(--color-dark);
     padding-right: 1rem;
   }
 
@@ -96,7 +96,7 @@
   .presence h2,
   .resume h2,
   .interests h2 {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--color-dark);
     min-width: 300px;
   }
 }

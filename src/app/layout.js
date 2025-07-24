@@ -22,14 +22,14 @@ export default function RootLayout({ children }) {
           </div>
 
           <footer>
-            <span className={styles.botlLeft}>
+            {/* <span className={styles.botlLeft}>
               <Image
                 src="/footer/nut.png"
                 alt="nut"
                 width={18}
                 height={18}
               ></Image>
-            </span>
+            </span> */}
             Made with bugs
             <span className={styles.bugOne}>
               <Bug outline="#FFFFFF" />
@@ -38,14 +38,14 @@ export default function RootLayout({ children }) {
               <Bug outline="#FFFFFF" />
             </span>
             sweat, and tears{" "}
-            <span className={styles.boltRight}>
+            {/* <span className={styles.boltRight}>
               <Image
                 src="/footer/nut.png"
                 alt="nut"
                 width={18}
                 height={18}
               ></Image>
-            </span>
+            </span> */}
           </footer>
         </div>
       </body>

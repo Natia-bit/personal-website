@@ -1,5 +1,4 @@
 .postItContainer {
-  background: #ffc;
   padding: 1em 1.5em;
   margin-bottom: 2.5em;
   box-shadow: 2px 2px 5px rgba(33, 33, 33, 0.5);
@@ -21,18 +20,6 @@
 
 .postItContainer:nth-child(even) {
   transform: rotate(-0.7deg);
-}
-
-.postItContainer[data-color="yellow"] {
-  background: #ffc;
-}
-
-.postItContainer[data-color="blue"] {
-  background: #a8dadc;
-}
-
-.postItContainer[data-color="light-blue"] {
-  background: #e0f2f7;
 }
 
 .postItContainer h3 {

@@ -1,5 +1,5 @@
 .experianceContainer {
-  border: 3px solid black;
+  border: 3px solid var(--color-dark);
   width: 90%;
   height: auto;
   margin: 0.5rem;
@@ -23,7 +23,7 @@
 .company {
   font-size: 1.4rem;
   font-weight: 400;
-  color: grey;
+  color: var(--color-grey);
 }
 
 .dateAndToggleButton {
@@ -59,7 +59,7 @@
 
 .toggleButton {
   outline: 0;
-  border: 1px solid black;
+  border: 1px solid var(--color-dark);
   cursor: pointer;
   position: relative;
   background-color: rgba(0, 0, 0, 0);
@@ -89,7 +89,7 @@
 
 .toggleButton:after {
   content: "";
-  background-color: #ffe54c;
+  background-color: var(--color-secondery);
   width: 100%;
   z-index: -1;
   position: absolute;
