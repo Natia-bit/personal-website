@@ -11,8 +11,6 @@
   flex: 1;
   min-width: 250px;
   margin-right: 5em;
-
-  /* Multi column ? */
   column-count: 3;
   column-gap: 3rem;
 }
