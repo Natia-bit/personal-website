@@ -2,16 +2,17 @@ import ContentDisplay from "@/components/ContentDisplay";
 import SectionLink from "@/components/SectionLink";
 import styles from "./page.module.css";
 import SkillSlider from "@/components/SkillSlider";
-import MagneticClipImage from "@/components/MagneticClipImage";
 import ExperianceDisplay from "@/components/ExperianceDisplay";
 import PersonalDetails from "@/components/PersonalDetails";
 import workExperiance from "../data/workExperiance.json";
 import skillData from "../data/skillData.json";
+import ImageWithTape from "@/components/ImageWithTape";
 
 export default function Home() {
   return (
     <div>
-      <h1>Hello! I am Natia </h1>
+      <h1>Hello! I am Natia</h1>
+
       <ContentDisplay title="A bit about me...">
         <p>
           After working for over 10 years in the design field, I felt that I was
@@ -62,13 +63,13 @@ export default function Home() {
               ))}
             </div>
 
-            <MagneticClipImage
+            <ImageWithTape
               imageSrc="/memes/sheldon.jpg"
               imageWidth={400}
               imageHeight={400}
               rotation={4}
-              clipColor="#FF0000"
-            />
+              className={styles.tapedImage}
+            ></ImageWithTape>
           </div>
         </ContentDisplay>
       </section>
