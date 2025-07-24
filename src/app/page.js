@@ -7,11 +7,12 @@ import PersonalDetails from "@/components/PersonalDetails";
 import workExperiance from "../data/workExperiance.json";
 import skillData from "../data/skillData.json";
 import ImageWithTape from "@/components/ImageWithTape";
+import MainHeading from "@/components/MainHeading";
 
 export default function Home() {
   return (
     <div>
-      <h1>Hello! I am Natia</h1>
+      <MainHeading title="Hello! I'm Natia"></MainHeading>
 
       <ContentDisplay title="A bit about me...">
         <p>

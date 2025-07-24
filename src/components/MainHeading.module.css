@@ -1,0 +1,32 @@
+.headingContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  /* align-items: center; */
+  gap: 20px;
+  width: 100%;
+}
+
+.textWrapper {
+  text-align: left;
+  flex-grow: 1;
+  margin-top: 3em;
+  position: relative;
+}
+
+.headingContainer h1 {
+  margin: 0;
+}
+
+.headingContainer p {
+  margin-left: 5em;
+  position: relative;
+  z-index: 2;
+}
+
+.stack {
+  position: absolute;
+  top: 90px;
+  left: 11em;
+  z-index: 1;
+}
