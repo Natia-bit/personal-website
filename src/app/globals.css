@@ -7,6 +7,8 @@
 
   --color-background: #f8f9fa;
   --color-muted: #bcdffb;
+  --color-dark: #292e33;
+  --color-light: #e9ecef;
 
   --color-text-header: #343a40;
   --color-text-main: #343a40;
@@ -37,6 +39,6 @@ footer {
   margin-top: auto;
   padding: 1rem;
   text-align: center;
-  background-color: var(--color-text-header);
-  color: white;
+  background-color: var(--color-dark);
+  color: var(--color-light);
 }
