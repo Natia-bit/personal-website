@@ -1,5 +1,6 @@
 .personalContainer {
   display: grid;
+  grid-template-rows: auto 1fr;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   padding: 20px;
@@ -46,7 +47,7 @@
 .resume h2,
 .interests h2 {
   border-bottom: 2px solid var(--color-dark);
-  min-width: 300px;
+  min-width: 100%;
 }
 
 .resume a {

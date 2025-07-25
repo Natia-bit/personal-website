@@ -1,7 +1,6 @@
 import ImageWithTape from "./ImageWithTape";
-import Image from "next/image";
-import styles from "./MainHeading.module.css";
 
+import styles from "./MainHeading.module.css";
 export default function MainHeading({ title, children }) {
   return (
     <div className={styles.headingContainer}>
@@ -13,14 +12,16 @@ export default function MainHeading({ title, children }) {
       ></ImageWithTape>
       <div className={styles.textWrapper}>
         <h1>{title}</h1>
-        <p>A software engineer</p>
-        <Image
+        {/* <p>A software engineer</p> */}
+        {/* <Image
           src="/heading/whiteboard-stack.png"
           alt="stack"
           width={340}
           height={180}
           className={styles.stack}
-        ></Image>
+        ></Image> */}
+
+        {/* <ProjectOverview></ProjectOverview> */}
       </div>
     </div>
   );

@@ -8,11 +8,17 @@ import workExperiance from "../data/workExperiance.json";
 import skillData from "../data/skillData.json";
 import ImageWithTape from "@/components/ImageWithTape";
 import MainHeading from "@/components/MainHeading";
+import ProjectOverview from "@/components/ProjectSection/ProjectOverview";
 
 export default function Home() {
   return (
     <div>
       <MainHeading title="Hello! I'm Natia"></MainHeading>
+
+      <ContentDisplay title="Projects">
+        <div className={styles.projects}></div>
+        <ProjectOverview></ProjectOverview>
+      </ContentDisplay>
 
       <ContentDisplay title="A bit about me...">
         <p>
