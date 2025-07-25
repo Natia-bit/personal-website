@@ -50,7 +50,18 @@ export default function ProjectData() {
                 <Bug width={40} height={40} />
               </span>
             )}
-            <label>{item.name}</label>
+            <label>{item.name} </label>
+            <span>
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link}
+              >
+                {"[Link]" || "Oups! What happened to the link?"}
+              </a>
+            </span>
+
             <div className={styles.techUsed}>
               {item.techUsed.map((skill, idx) => (
                 <TechnologiesUsed
@@ -76,7 +87,17 @@ export default function ProjectData() {
                 <Bug width={40} height={40} />
               </span>
             )}
-            <label>{item.name}</label>
+            <label>{item.name} </label>
+            <span>
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link}
+              >
+                {"[Link]" || "Oups! What happened to the link?"}
+              </a>
+            </span>
             <div className={styles.techUsed}>
               {item.techUsed.map((skill, idx) => (
                 <TechnologiesUsed
