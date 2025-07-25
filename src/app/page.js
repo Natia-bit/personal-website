@@ -13,48 +13,15 @@ import ProjectOverview from "@/components/ProjectSection/ProjectOverview";
 export default function Home() {
   return (
     <div>
-      <MainHeading title="Hello! I'm Natia"></MainHeading>
+      <div className={styles.intro}>
+        <MainHeading title="Hello! I'm Natia"></MainHeading>
+      </div>
 
-      <ContentDisplay title="Projects">
-        <div className={styles.projects}></div>
-        <ProjectOverview></ProjectOverview>
-      </ContentDisplay>
-
-      <ContentDisplay title="A bit about me...">
-        <p>
-          After working for over 10 years in the design field, I felt that I was
-          in a stale position where I was repeating the years working. In 2021 I
-          decided to follow my old and not forgotten dream and learn how to code
-          and transition to the tech industry, while I maintained part time work
-          as designer to close clientele. Since then I have been taking various
-          courses and developing small encapsulated projects. At the end of 2024
-          I was fortunate to be exposed to the tech industry and view at first
-          hand the development cycle during the internship. After the internship
-          I continue expanding my knowledge by working on small projects and
-          looking for a new role.
-        </p>
-
-        <nav className={styles.SectionLinks}>
-          <SectionLink
-            href="#skills"
-            iconSrc="/icons/settings.png"
-            animatedSrc="/icons/settings.gif"
-            label="Skills"
-          />
-          <SectionLink
-            href="#experience"
-            iconSrc="/icons/boss.png"
-            animatedSrc="/icons/boss.gif"
-            label="Work Experience"
-          />
-          <SectionLink
-            href="#personal-details"
-            iconSrc="/icons/profile.png"
-            animatedSrc="/icons/profile.gif"
-            label="Personal Details"
-          />
-        </nav>
-      </ContentDisplay>
+      <div>
+        <ContentDisplay title="Projects" className={styles.myProjects}>
+          <ProjectOverview></ProjectOverview>
+        </ContentDisplay>
+      </div>
 
       <section id="skills">
         <ContentDisplay title="Skills">

@@ -2,31 +2,34 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  /* align-items: center; */
+  align-items: flex-start;
   gap: 20px;
   width: 100%;
+}
+
+.headingContainer > div:first-child {
+  flex-shrink: 0;
 }
 
 .textWrapper {
   text-align: left;
   flex-grow: 1;
-  margin-top: 3em;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .headingContainer h1 {
   margin: 0;
+  margin-bottom: 1em;
 }
 
-.headingContainer p {
-  margin-left: 5em;
-  position: relative;
-  z-index: 2;
+.aboutMeText {
+  flex-grow: 1;
+  min-width: 0;
+  margin-top: -50px;
 }
 
-.stack {
-  position: absolute;
-  top: 90px;
-  left: 11em;
-  z-index: 1;
+.text {
+  margin: 0;
 }

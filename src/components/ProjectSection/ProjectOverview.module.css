@@ -1,0 +1,10 @@
+.projectContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.labels {
+  display: inline;
+  margin: 80px 40px 0 80px;
+}
