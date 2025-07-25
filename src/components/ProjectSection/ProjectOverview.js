@@ -4,9 +4,9 @@ import ProjectData from "./ProjectData";
 export default function ProjectOverview() {
   return (
     <div>
-      <StackLabel color="#0056b3" name="Back End"></StackLabel>
-      <StackLabel color="#ffcd38" name="Front Emd"></StackLabel>
-      <StackLabel color="red" name="Full Stack"></StackLabel>
+      <StackLabel color="#a1c8e9" name="Back End"></StackLabel>
+      <StackLabel color="#fff69b" name="Front End"></StackLabel>
+      <StackLabel color="#bcdfc9" name="Full Stack"></StackLabel>
       <ProjectData></ProjectData>
     </div>
   );
