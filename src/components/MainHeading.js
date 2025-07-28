@@ -8,28 +8,58 @@ export default function MainHeading({ title, children }) {
     <div className={styles.headingContainer}>
       <ImageWithTape
         imageSrc="/heading/portrait.png"
-        imageWidth={280}
-        imageHeight={280}
+        imageWidth={300}
+        imageHeight={300}
         rotation={-2}
       ></ImageWithTape>
+
       <div className={styles.textWrapper}>
         <h1>{title}</h1>
 
         <div className={styles.aboutMeText}>
           <ContentDisplay title="A bit about me">
             <p className={styles.text}>
-              After working for over 10 years in the design field, I felt that I
-              was in a stale position where I was repeating the years working.
-              In 2021 I decided to follow my old and not forgotten dream and
-              learn how to code and transition to the tech industry, while I
-              maintained part time work as designer to close clientele. Since
-              then I have been taking various courses and developing small
-              encapsulated projects. At the end of 2024 I was fortunate to be
-              exposed to the tech industry and view at first hand the
-              development cycle during the internship. After the internship I
-              continue expanding my knowledge by working on small projects and
-              looking for a new role.
+              After over a decade in the design field, I reached a point of
+              stagnation, where each year felt like a repetition of the last. In
+              2021, I decided to pursue a long-held dream: learning to code and
+              transitioning to the tech industry. While doing so, I maintained
+              part-time design work for a select clientele. Since then, I've
+              actively engaged in various courses and developed several small,
+              self-contained projects. At the end of 2024, I had the opportunity
+              to gain firsthand experience in the tech industry through an
+              internship, which allowed me to observe and participate in the
+              software development cycle.
             </p>
+            <p>
+              Currently, I'm actively expanding my skill set by developing
+              various web applications for private clientele. These include a
+              joinery manufacturing list tool, informational and
+              service-oriented websites for a bakery and for a ELD teacher,
+              showcasing services and products. This work is not only about
+              writing code, it’s allowed me to immerse myself in full-stack
+              development, working across both frontend and backend systems. I’m
+              using tools such as Docker based databases, Testcontainers for
+              enhancing testing methodologies, and modern frameworks like
+              Next.js and Tailwind CSS to build scalable, production-ready
+              solutions. This hands-on experience continues to refine my ability
+              to deliver robust and maintainable software.
+            </p>
+            <div className={styles.quoteContainer}>
+              <blockquote>
+                <p>
+                  A learning experience is one of those things that says,
+                  <span>
+                    " You know that thing you just did? Don't do that."
+                  </span>
+                </p>
+                <cite>
+                  Douglas Adams,
+                  <em>
+                    The Salmon of Doubt: Hitchhiking the Galaxy One Last Time
+                  </em>
+                </cite>
+              </blockquote>
+            </div>
           </ContentDisplay>
         </div>
       </div>

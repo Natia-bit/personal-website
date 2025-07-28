@@ -9,7 +9,7 @@ export default function Navigation() {
         <Link href="/">About Me</Link>
       </li>
       <li className={styles.navItem}>
-        <Link href="/projects">Projects</Link>
+        <Link href="#projects">Projects</Link>
       </li>
       <li className={styles.navItem}>
         <Link href="#skills">Skills</Link>
