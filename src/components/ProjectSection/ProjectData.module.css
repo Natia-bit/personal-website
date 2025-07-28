@@ -17,6 +17,20 @@
   margin-bottom: 20px;
 }
 
+.projectName {
+  font-weight: 800;
+  margin-right: 0.5rem;
+}
+
+.linkContainer {
+  display: flex;
+  align-items: center;
+}
+
+.linkContainer a {
+  margin-right: 0.6rem;
+}
+
 .planning,
 .inprogress,
 .done {

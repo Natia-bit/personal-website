@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import PostIt from "../PostIt";
 import Bug from "../Bug";
 
@@ -24,7 +26,7 @@ export default function ProjectData() {
             key={i}
             color={categoryColors[item.category] || categoryColors.default}
           >
-            <label>{item.name}</label>
+            <label className={styles.projectName}>{item.name}</label>
             <div className={styles.techUsed}>
               {item.techUsed.map((skill, idx) => (
                 <TechnologiesUsed
@@ -50,17 +52,30 @@ export default function ProjectData() {
                 <Bug width={40} height={40} />
               </span>
             )}
-            <label>{item.name} </label>
-            <span>
-              <a
-                href={item.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.link}
-              >
-                {"[Link]" || "Oups! What happened to the link?"}
-              </a>
-            </span>
+            <div className={styles.linkContainer}>
+              <label className={styles.projectName}> {item.name} </label>
+              <span>
+                <a
+                  href={item.gitLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.link}
+                >
+                  <span>
+                    {(
+                      <Image
+                        src={item.imgSrcOne}
+                        alt={item.name}
+                        width={30}
+                        height={30}
+                      />
+                    ) || "Oups! What happened to the link?"}
+                  </span>
+                  {/* {"[Link]" || "Oups! What happened to the link?"} */}
+                </a>
+              </span>
+            </div>
+            <p>{item.description}</p>
 
             <div className={styles.techUsed}>
               {item.techUsed.map((skill, idx) => (
@@ -87,17 +102,46 @@ export default function ProjectData() {
                 <Bug width={40} height={40} />
               </span>
             )}
-            <label>{item.name} </label>
-            <span>
-              <a
-                href={item.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.link}
-              >
-                {"[Link]" || "Oups! What happened to the link?"}
-              </a>
-            </span>
+            <div className={styles.linkContainer}>
+              <label className={styles.projectName}>{item.name} </label>
+              <span>
+                <a
+                  href={item.gitLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.link}
+                >
+                  <span>
+                    {(
+                      <Image
+                        src={item.imgSrcOne}
+                        alt={item.name}
+                        width={30}
+                        height={30}
+                      />
+                    ) || "Oups! What happened to the link?"}
+                  </span>
+                </a>
+
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.link}
+                >
+                  <span>
+                    {(
+                      <Image
+                        src={item.imgLink}
+                        alt={item.name}
+                        width={30}
+                        height={30}
+                      />
+                    ) || "Oups! What happened to the link?"}
+                  </span>
+                </a>
+              </span>
+            </div>
             <div className={styles.techUsed}>
               {item.techUsed.map((skill, idx) => (
                 <TechnologiesUsed
