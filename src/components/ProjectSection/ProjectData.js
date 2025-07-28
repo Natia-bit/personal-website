@@ -142,6 +142,7 @@ export default function ProjectData() {
                 </a>
               </span>
             </div>
+            <p>{item.description}</p>
             <div className={styles.techUsed}>
               {item.techUsed.map((skill, idx) => (
                 <TechnologiesUsed

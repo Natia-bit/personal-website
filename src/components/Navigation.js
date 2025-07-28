@@ -15,7 +15,7 @@ export default function Navigation() {
         <Link href="#skills">Skills</Link>
       </li>
       <li className={styles.navItem}>
-        <Link href="#experience">Work Experiance</Link>
+        <Link href="#experience">Work Experience</Link>
       </li>
       <li className={styles.navItem}>
         <Link href="#personal-details">Personal Details</Link>

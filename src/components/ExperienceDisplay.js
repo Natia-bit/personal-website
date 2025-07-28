@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import TechnologiesUsed from "./TechnologiesUsed";
-import styles from "./ExperianceDisplay.module.css";
+import styles from "./ExperienceDisplay.module.css";
 
-export default function ExperianceDisplay({
+export default function ExperienceDisplay({
   jobTitle,
   company,
   startDate,

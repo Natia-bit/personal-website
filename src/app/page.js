@@ -2,7 +2,7 @@ import ContentDisplay from "@/components/ContentDisplay";
 import SectionLink from "@/components/SectionLink";
 import styles from "./page.module.css";
 import SkillSlider from "@/components/SkillSlider";
-import ExperianceDisplay from "@/components/ExperianceDisplay";
+import ExperienceDisplay from "@/components/ExperienceDisplay";
 import PersonalDetails from "@/components/PersonalDetails";
 import workExperiance from "../data/workExperiance.json";
 import skillData from "../data/skillData.json";
@@ -49,10 +49,10 @@ export default function Home() {
       </section>
 
       <section id="experience" className={styles.experienceContainer}>
-        <ContentDisplay title={"Experiance"}>
+        <ContentDisplay title={"Experience"}>
           <div className={styles.experienceContainerWrapper}>
             {workExperiance.map((job, idx) => (
-              <ExperianceDisplay key={idx} {...job} initialExpanded={idx < 2} />
+              <ExperienceDisplay key={idx} {...job} initialExpanded={idx < 2} />
             ))}
           </div>
         </ContentDisplay>
