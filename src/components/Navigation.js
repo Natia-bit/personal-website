@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./Navigation.module.css";
+import SectionLink from "./SectionLink";
 
 export default function Navigation() {
   return (
@@ -8,10 +9,16 @@ export default function Navigation() {
         <Link href="/">About Me</Link>
       </li>
       <li className={styles.navItem}>
-        <Link href="/projects">My Projects</Link>
+        <Link href="#projects">Projects</Link>
       </li>
       <li className={styles.navItem}>
-        <Link href="/lessons">Lessons & Wisdoms</Link>
+        <Link href="#skills">Skills</Link>
+      </li>
+      <li className={styles.navItem}>
+        <Link href="#experience">Work Experience</Link>
+      </li>
+      <li className={styles.navItem}>
+        <Link href="#personal-details">Personal Details</Link>
       </li>
     </ul>
   );

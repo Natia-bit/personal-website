@@ -1,0 +1,48 @@
+.postItContainer {
+  padding: 1em 1.5em;
+  margin-bottom: 2.5em;
+  box-shadow: 2px 2px 5px rgba(33, 33, 33, 0.5);
+  transform: rotate(0.5deg);
+  transition: transform 0.2s linear;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+
+  min-width: 300px;
+  min-height: 180px;
+  max-width: 300px;
+
+  box-sizing: border-box;
+}
+
+.postItContainer:nth-child(even) {
+  transform: rotate(-0.7deg);
+}
+
+.postItContainer h3 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.postItContainer .text {
+  font-size: 0.8em;
+  text-align: left;
+  width: 100%;
+}
+
+.postItContainer .text {
+  margin: 0.2rem 0;
+}
+
+.postItContainer:hover,
+.postItContainer:focus {
+  box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+  position: relative;
+  z-index: 2;
+}

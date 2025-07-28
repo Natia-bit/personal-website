@@ -1,0 +1,109 @@
+.personalContainer {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 20px;
+}
+
+.personalContainer h2,
+.personalContainer h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.personalContainer h2 {
+  font-size: 1.6em;
+}
+
+.personalContainer h3 {
+  font-size: 1.4em;
+}
+
+.link {
+  color: var(--color-text-main);
+  text-decoration: none;
+}
+
+.information,
+.resume,
+.presence,
+.interests {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.information,
+.resume,
+.presence {
+  border-right: 2px solid var(--color-dark);
+  padding-right: 1rem;
+}
+
+.information h2,
+.resume h2,
+.presence h2,
+.resume h2,
+.interests h2 {
+  border-bottom: 2px solid var(--color-dark);
+  min-width: 100%;
+}
+
+.resume a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.description {
+  color: var(--color-grey);
+}
+
+@media (min-width: 768px) {
+  .personalContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .information,
+  .presence {
+    border-right: 2px solid var(--color-dark);
+    padding-right: 1rem;
+  }
+
+  .resume {
+    border: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .personalContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .information,
+  .resume,
+  .presence {
+    border-right: 2px solid var(--color-dark);
+    padding-right: 1rem;
+  }
+
+  .information h2,
+  .resume h2,
+  .presence h2,
+  .resume h2,
+  .interests h2 {
+    border-bottom: 2px solid var(--color-dark);
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .personalContainer {
+    grid-template-columns: 1fr;
+  }
+}

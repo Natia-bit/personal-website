@@ -1,10 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Sue+Ellen+Francisco&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+:root {
+  --color-primary: #0056b3;
+  --color-secondery: #ffcd38;
+
+  --color-background: #f8f9fa;
+  --color-muted: #bcdffb;
+  --color-dark: #292e33;
+  --color-grey: #85888c;
+  --color-light: #e9ecef;
+
+  --color-text-header: #2e3439;
+  --color-text-main: #343a40;
+}
 
 h1 {
   font-family: "Sue Ellen Francisco";
+  color: var(--color-text-header);
+}
+
+h2,
+h3 {
+  font-family: "Sue Ellen Francisco";
+  color: var(--color-text-header);
 }
 
 body {
-  font-family: "Lato";
-  font-size: large;
+  font-family: "JetBrains Mono";
+  color: var(--color-text-main);
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--color-dark);
+  color: var(--color-light);
 }

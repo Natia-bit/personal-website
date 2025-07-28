@@ -1,0 +1,111 @@
+.experianceContainer {
+  border: 3px solid var(--color-dark);
+  width: 90%;
+  height: auto;
+  margin: 0.5rem;
+  border-radius: 200px 5px 200px 5px / 5px 200px 5px 200px;
+  font-size: 0.95rem;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jobTitle {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 1.8em;
+}
+
+.company {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--color-grey);
+}
+
+.dateAndToggleButton {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.details {
+  font-weight: 700;
+  margin-top: 0.1rem;
+}
+
+.description {
+  list-style: none;
+  padding-left: 0;
+  padding-bottom: 1.5rem;
+  margin: 0;
+}
+.description li {
+  margin-left: 0;
+  padding-left: 0;
+  text-indent: 0;
+}
+
+.techUsed {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.7rem;
+}
+
+.toggleButton {
+  outline: 0;
+  border: 1px solid var(--color-dark);
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+}
+
+.toggleIcon {
+  display: block;
+  line-height: 1;
+  transition: transform 0.5s ease-in-out;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.toggleButton:hover .toggleIcon {
+  transform: rotate(180deg);
+}
+
+.toggleButton:after {
+  content: "";
+  background-color: var(--color-secondery);
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  transition: 0.2s;
+}
+
+.toggleButton:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .toggleButton {
+    padding: 6px 25px 6px;
+  }
+}

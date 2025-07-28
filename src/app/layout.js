@@ -1,19 +1,9 @@
 import Navigation from "@/components/Navigation";
-import { Sue_Ellen_Francisco, Lato } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
+import Bug from "@/components/Bug";
 
-const sueEllenFrancisco = Sue_Ellen_Francisco({
-  weight: "400",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const lato = Lato({
-  subsets: ["latin"],
-  weight: ["100", "300", "400", "700", "900"],
-  display: "swap",
-  variable: "--font-lato",
-});
+import styles from "./layout.module.css";
 
 export const metadata = {
   title: "Natia Natisvili",
@@ -22,10 +12,42 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <Navigation />
-        <main>{children}</main>
-        <footer>Made with blood, sweat and tears</footer>
+      <body className={styles.body}>
+        <div className={styles.wrapper}>
+          <div className={styles.container}>
+            <aside className={styles.sidebar}>
+              <Navigation />
+            </aside>
+            <main className={styles.main}>{children}</main>
+          </div>
+
+          <footer>
+            {/* <span className={styles.botlLeft}>
+              <Image
+                src="/footer/nut.png"
+                alt="nut"
+                width={18}
+                height={18}
+              ></Image>
+            </span> */}
+            Made with bugs
+            <span className={styles.bugOne}>
+              <Bug outline="#FFFFFF" />
+            </span>
+            <span className={styles.bugTwo}>
+              <Bug outline="#FFFFFF" />
+            </span>
+            sweat, and tears{" "}
+            {/* <span className={styles.boltRight}>
+              <Image
+                src="/footer/nut.png"
+                alt="nut"
+                width={18}
+                height={18}
+              ></Image>
+            </span> */}
+          </footer>
+        </div>
       </body>
     </html>
   );

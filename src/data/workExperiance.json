@@ -1,0 +1,142 @@
+[
+  {
+    "startDate": "January 2025",
+    "endDate": "Present",
+    "jobTitle": "Software Developer",
+    "location": "Cape Town",
+    "company": "Freelance",
+    "techUsed": [
+      { "skill": "Java", "iconSrc": "/skills/java.png" },
+      { "skill": "Spring", "iconSrc": "/skills/spring-boot.svg" },
+      { "skill": "Posgres", "iconSrc": "/skills/postgresql.png" },
+      { "skill": "React", "iconSrc": "/skills/react.png" },
+      { "skill": "JavaScript", "iconSrc": "/skills/javascript.png" },
+      { "skill": "CSS", "iconSrc": "/skills/css.png" },
+      { "skill": "HTML", "iconSrc": "/skills/html.png" }
+    ],
+    "description": [
+      "After completing a software engineering internship, I transitioned into a role focused on building bespoke software solutions. My current projects include developing an advertising website for a local independent bakery, and an MVP for joinery manufacturing—a tool that generates precise cutting lists with dimensions for potential clients.",
+      "This work involves a comprehensive approach, from creating detailed technical specifications to full-stack implementation. I leverage Java Spring for the backend, a Dockerized PostgreSQL database, and a React frontend for both the bakery website and the joinery MVP, all while ensuring robust quality through enhanced testing methodologies, including Testcontainers."
+    ]
+  },
+  {
+    "startDate": "September 2024",
+    "endDate": "December 2024",
+    "jobTitle": "Software Engineering Intern",
+    "location": "Cape Town",
+    "company": "Superbalist",
+    "techUsed": [
+      { "skill": "Python", "iconSrc": "/skills/python.svg" },
+      { "skill": "Django", "iconSrc": "/skills/django.png" },
+      { "skill": "MySQL", "iconSrc": "/skills/mysql.png" },
+      { "skill": "SQLite", "iconSrc": "/skills/sqlite.png" },
+      { "skill": "Vue (Nuxt.js)", "iconSrc": "/skills/vuejs.png" },
+      { "skill": "CSS", "iconSrc": "/skills/css.png" },
+      { "skill": "HTML", "iconSrc": "/skills/html.png" }
+    ],
+    "description": [
+      "As a software engineering intern, I played a key supporting role within the engineering team, gaining valuable hands-on experience across the entire development lifecycle. My daily responsibilities included updating, writing, and organizing documentation to ensure team clarity and accessibility. I actively participated in daily stand-ups, sprint meetings, and planning sessions, contributing to progress discussions, addressing blockers, and refining project priorities. I also took ownership of smaller projects, managing them from initial development to completion, and drafted concise technical specifications to guide solution implementation.",
+      "During my internship, I developed a detailed onboarding and installation guide for Linux developers, addressing existing gaps in the development environment. I also personally created a visualization tool that reports on employee roles and permissions by rank and position—information that was previously unavailable. This tool's technical stack included Python 3, Django, MySQL, and SQLite for the backend, and Vue, Nuxt, Chart.js, and V-network graph with 3D Force for the frontend"
+    ]
+  },
+  {
+    "startDate": "January 2021",
+    "endDate": "August 2024",
+    "jobTitle": "CAD Designer & Project Manager",
+    "location": "Cape Town",
+    "company": "Consultant",
+    "techUsed": [
+      { "skill": "AutoCAD", "iconSrc": "/skills/autocad.png" },
+      { "skill": "SketchUp", "iconSrc": "/skills/sketchup.png" },
+      { "skill": "V-Ray", "iconSrc": "/skills/vray.png" },
+      { "skill": "Photoshop", "iconSrc": "/skills/photoshop.png" },
+      { "skill": "InDesign", "iconSrc": "/skills/indesign.png" }
+    ],
+    "description": [
+      "As an Independent Contractor, I specialize in providing detailed 2D and 3D CAD drawings alongside comprehensive project management from start to finish. My process begins with a thorough client needs analysis and the presentation of tailored solutions, complete with alternatives, alongside cost estimations and scheduling. Throughout the project lifecycle, I handle coordination between the client, builder, and subcontractors, which includes providing supportive detailed plans, conducting site visits to verify work quality, diligently managing costs and timelines, and addressing any unforeseen circumstances with revised estimates and schedules."
+    ]
+  },
+  {
+    "startDate": "August 2017",
+    "endDate": "January 2021",
+    "jobTitle": "Senior Designer & Project Manager",
+    "location": "Cape Town",
+    "company": "CORE Cabinets & Interiors",
+    "techUsed": [
+      { "skill": "AutoCAD", "iconSrc": "/skills/autocad.png" },
+      { "skill": "SketchUp", "iconSrc": "/skills/sketchup.png" },
+      { "skill": "V-Ray", "iconSrc": "/skills/vray.png" },
+      { "skill": "Photoshop", "iconSrc": "/skills/photoshop.png" },
+      { "skill": "InDesign", "iconSrc": "/skills/indesign.png" }
+    ],
+    "description": [
+      "Combining Design, Operations, and Project Management, I specialized in kitchen, bathroom, BICs, and custom furniture.  My responsibilities spanned the entire project lifecycle, starting with analyzing client needs and presenting tailored solutions—including revisions and a clear breakdown of pros and cons—alongside detailed costing and timelines. I meticulously managed the ordering process, sourcing materials from various suppliers and ensuring timely arrivals, and scheduled and oversaw production in the factory. Maintaining open communication with clients, builders, and subcontractors was paramount, as was handling delivery and installation, which involved frequent site visits to ensure smooth operation and address any unforeseen circumstances. My commitment extended to aftercare, providing clients with care information and addressing additional requests, and conducting follow-ups after project completion.",
+      "Throughout this role, I made significant contributions, including automating and standardizing processes to maximize efficiency and minimize human errors by 30%, identifying and addressing key problems and opportunities for the company, building alliances and partnerships that promoted company culture, and ultimately increasing the number of jobs by 45% while helping secure high-profile projects."
+    ]
+  },
+  {
+    "startDate": "October 2015",
+    "endDate": "August 2017",
+    "jobTitle": "Interior & CAD Designer",
+    "location": "London UK / Cape Town SA",
+    "company": "CORE Cabinets & Interiors",
+    "techUsed": [
+      { "skill": "AutoCAD", "iconSrc": "/skills/autocad.svg" },
+      { "skill": "SketchUp", "iconSrc": "/skills/sketchup.png" },
+      { "skill": "Rhinoceros 3D", "iconSrc": "/skills/rhino.png" },
+      { "skill": "3D Studio Max", "iconSrc": "/skills/sket3dmax.png" },
+      { "skill": "V-Ray", "iconSrc": "/skills/vray.png" },
+      { "skill": "Photoshop", "iconSrc": "/skills/photoshop.png" },
+      { "skill": "InDesign", "iconSrc": "/skills/indesign.png" }
+    ],
+    "description": [
+      "During the transition from London to Cape Town, as an Independent Contractor, I specialized in detailed 2D and 3D CAD drawings and graphic design. My expertise included translating hand drawings into AutoCAD and producing comprehensive 2D and 3D layouts, elevations, sections, and various technical details, such as electrical wiring. I also leveraged Photoshop to create custom 3D textures and utilized InDesign and Photoshop for graphic communication, which involved crafting custom CVs and occasional cards."
+    ]
+  },
+  {
+    "startDate": "March 2014",
+    "endDate": "October 2015",
+    "jobTitle": "Kitchen Designer & Trainer",
+    "location": "London, UK",
+    "company": "IKEA",
+    "techUsed": [
+      { "skill": "AutoCAD", "iconSrc": "/skills/autocad.png" },
+      { "skill": "SketchUp", "iconSrc": "/skills/sketchup.png" },
+      { "skill": "Photoshop", "iconSrc": "/skills/photoshop.png" },
+      { "skill": "InDesign", "iconSrc": "/skills/indesign.png" }
+    ],
+    "description": [
+      "As a Senior Designer, I played a pivotal role in fostering a collaborative environment by training and mentoring fellow designers. I developed comprehensive training programs that equipped them with essential design principles, CAD technologies, and crucial client communication skills, significantly enhancing their ability to contribute to successful kitchen projects, including sales and related services. While providing ongoing support to colleagues, I continued to excel in my own design role. Additionally, I collaborated with other departments to create and maintain impactful store displays.",
+      "Through my efforts, I empowered co-workers with increased confidence and improved project execution, drove a remarkable 120% increase in sales by focusing on high-margin products, and reduced error rates by 80% through effective training and process improvements."
+    ]
+  },
+  {
+    "startDate": "September 2013",
+    "endDate": "March 2014",
+    "jobTitle": "Kitchen Designer & Project Support",
+    "location": "London, UK",
+    "company": "IKEA",
+    "techUsed": [
+      { "skill": "AutoCAD", "iconSrc": "/skills/autocad.png" },
+      { "skill": "SketchUp", "iconSrc": "/skills/sketchup.png" },
+      { "skill": "Photoshop", "iconSrc": "/skills/photoshop.png" },
+      { "skill": "InDesign", "iconSrc": "/skills/indesign.png" }
+    ],
+    "description": [
+      "My primary responsibility was to facilitate a smooth transition between kitchen ranges. This involved providing in-depth training on the new range to the team and general store training to all members. Additionally, I managed the ordering of all materials for the new display and coordinated, monitored, and assisted with the construction during the rebuild process.",
+      "I ensured a seamless transition between kitchen ranges by planning refresher training sessions and guaranteeing ongoing support from senior staﬀ."
+    ]
+  },
+  {
+    "startDate": "May 2012",
+    "endDate": "September 2013",
+    "jobTitle": "Kitchen and Dining Co-Worker",
+    "location": "London, UK",
+    "company": "IKEA",
+    "techUsed": [{ "skill": "AutoCAD", "iconSrc": "/skills/autocad.png" }],
+    "description": [
+      "Leveraging my design expertise, I conducted in-depth customer need analyses and translated them into captivating kitchen designs using CAD software. I eﬃciently managed the assembly and dismantling of visual in-store displays, ensuring a seamless customer experience. Additionally, I showcased key design eatures through creative use of space and lighting.",
+      "I was selected for the prestigious IKEA Home Planning Service."
+    ]
+  }
+]

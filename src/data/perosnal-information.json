@@ -1,0 +1,20 @@
+{
+  "contact": {
+    "iconSrc": "/skills/html.png",
+    "email": "natia.natisvili@gmail.com"
+  },
+  "location": "Cape Town, South Africa",
+  "legal": [
+    { "status": "Nationality", "description": "Greek" },
+    {
+      "status": "Residency",
+      "description": "Permanent resident of South Africa with SA ID"
+    }
+  ],
+  "languages": [
+    { "language": "English", "level": "Fluent bilingual" },
+    { "language": "Greek", "level": "Fluent bilingual" },
+    { "language": "Georgian", "level": "Intermediate" },
+    { "language": "Russian", "level": "Intermediate" }
+  ]
+}

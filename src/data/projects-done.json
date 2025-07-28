@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Planning Dinners",
+    "category": "Full Stack",
+    "bugs": "false",
+    "gitLink": "https://github.com/Natia-bit/MealDemo",
+    "imgSrcOne": "/skills/github.png",
+    "link": "https://planning-dinners.onrender.com/",
+    "imgLink": "/personal/link.svg",
+    "description": "A weekly meal planner web application designed to simplify dinner planning. Users can add favorite meals to a rotation and customize meal categories (e.g., chicken, meat, vegetarian) to control their weekly occurrences, making meal prep effortless",
+    "techUsed": [
+      { "skill": "Java", "iconSrc": "/skills/java.png" },
+      { "skill": "Spring", "iconSrc": "/skills/spring-boot.svg" },
+      { "skill": "MySQL", "iconSrc": "/skills/mysql.png" },
+      { "skill": "JPA Hibernate", "iconSrc": "/skills/hibernate.png" },
+      { "skill": "JavaScript", "iconSrc": "/skills/javascript.png" },
+      { "skill": "CSS", "iconSrc": "/skills/css.png" },
+      { "skill": "HTML", "iconSrc": "/skills/html.png" }
+    ]
+  },
+  {
+    "name": "Split & Tip",
+    "category": "Front End",
+    "bugs": "true",
+    "gitLink": "https://github.com/Natia-bit/split-n-tip",
+    "imgSrcOne": "/skills/github.png",
+    "link": "https://split-n-tip-eta.vercel.app/",
+    "imgLink": "/personal/link.svg",
+    "description": "Split N' Tip is a web application designed to simplify splitting bills among friends. Users can easily break down the total bill by who ordered what, add their individual contributions, set custom tip percentages, and confirm the final figures, ensuring a transparent and fair settlement.",
+    "techUsed": [
+      { "skill": "React", "iconSrc": "/skills/react.png" },
+      { "skill": "JavaScript", "iconSrc": "/skills/javascript.png" },
+      { "skill": "CSS", "iconSrc": "/skills/css.png" },
+      { "skill": "HTML", "iconSrc": "/skills/html.png" }
+    ]
+  }
+]
