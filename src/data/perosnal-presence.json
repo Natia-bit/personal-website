@@ -1,0 +1,22 @@
+[
+  {
+    "name": "GitHub",
+    "link": "https://github.com/Natia-bit",
+    "iconSrc": "/personal/github-icon.png"
+  },
+  {
+    "name": "LinkedIn",
+    "link": "https://www.linkedin.com/in/natia-natisvili-3739344a/",
+    "iconSrc": "/personal/linked-in.png"
+  },
+  {
+    "name": "Stack Overlow",
+    "link": "https://stackoverflow.com/users/15166991/nadia",
+    "iconSrc": "/personal/stack-overflow.png"
+  },
+  {
+    "name": "HackerRank",
+    "link": "https://www.hackerrank.com/profile/natia_natisvili",
+    "iconSrc": "/personal/hackerrank.png"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Fantasy and adventure literature",
+    "iconSrc": "/skills/github.png",
+    "description": "Some of my favorite reads are: The Wheel Of Time by Robert Jordan, Dune by Frank Herbert, The Martian by Andy Weir, Dirk Gently Series by Douglas Adams."
+  },
+  {
+    "name": "Lego",
+    "iconSrc": "/skills/stack.png",
+    "description": "One of my favorite build was the Dune Royal Ornithopter (10327)"
+  },
+  {
+    "name": "Sudoku",
+    "iconSrc": "/skills/stack.png",
+    "description": "That feeling when you solve it and things just come together..."
+  },
+  {
+    "name": "Space",
+    "iconSrc": "/skills/stack.png",
+    "description": "I love the work of James Webb, Euclid, and Hubble telescope. Nasas Perseverance Rover on Mars has a chip with my name on it, as well as Europa Clipper that is on its way to Jupiters icy moon Europa."
+  }
+]
