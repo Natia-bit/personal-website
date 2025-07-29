@@ -37,35 +37,34 @@
   z-index: 2;
 }
 
-.botlLeft {
-  margin-right: 50px;
-}
-
-.boltRight {
-  margin-left: 50px;
-}
-
 /* Account half screens */
 @media (max-width: 1200px) {
   .sidebar {
     width: 25%;
   }
+  .main {
+    margin-left: 25%;
+  }
 }
 
 @media (max-width: 768px) {
   .sidebar {
-    /* position: fixed;
-    width: 100%;
-    height: auto; */
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
+    height: auto;
+    padding: 10px 0;
+    background: white;
+    box-shadow: none;
     z-index: 1000;
+    overflow-y: visible;
   }
 
   .main {
     margin-left: 0;
     width: 100%;
+    padding-top: var(--mobile-nav-height, 80px);
   }
 
   .footer {
