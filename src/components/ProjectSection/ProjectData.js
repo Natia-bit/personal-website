@@ -74,6 +74,26 @@ export default function ProjectData() {
                   </span>
                 </a>
               </span>
+
+              {item.link && (
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.link}
+                >
+                  <span className={styles.siteLink}>
+                    {(
+                      <Image
+                        src={item.imgLink}
+                        alt={item.name}
+                        width={35}
+                        height={35}
+                      />
+                    ) || "Oups! What happened to the link?"}
+                  </span>
+                </a>
+              )}
             </div>
             <p>{item.description}</p>
 
