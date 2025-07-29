@@ -1,7 +1,7 @@
 import SectionCard from "@/components/SectionCard";
 import ExperienceDisplay from "@/components/ExperienceDisplay";
 import ImageWithTape from "@/components/ImageWithTape";
-import MainHeading from "@/components/MainHeading";
+import Introduction from "@/components/Introduction";
 import PersonalDetails from "@/components/PersonalDetails";
 import ProjectOverview from "@/components/ProjectSection/ProjectOverview";
 import SkillSlider from "@/components/SkillSlider";
@@ -13,16 +13,16 @@ export default function Home() {
   return (
     <div>
       <div className={styles.intro}>
-        <MainHeading title="Hello! I'm Natia"></MainHeading>
+        <Introduction title="Hello! I'm Natia"></Introduction>
       </div>
 
-      <div>
+      {/* <div>
         <SectionCard title="Projects" className={styles.myProjects}>
           <ProjectOverview></ProjectOverview>
         </SectionCard>
-      </div>
+      </div> */}
 
-      <section id="skills">
+      {/* <section id="skills">
         <SectionCard title="Skills">
           <div className={styles.skillContainer}>
             <div className={styles.skillList}>
@@ -45,9 +45,9 @@ export default function Home() {
             ></ImageWithTape>
           </div>
         </SectionCard>
-      </section>
+      </section> */}
 
-      <section id="experience" className={styles.experienceContainer}>
+      {/* <section id="experience" className={styles.experienceContainer}>
         <SectionCard title={"Experience"}>
           <div className={styles.experienceContainerWrapper}>
             {workExperiance.map((job, idx) => (
@@ -55,13 +55,13 @@ export default function Home() {
             ))}
           </div>
         </SectionCard>
-      </section>
+      </section> */}
 
-      <section id="personal-details">
+      {/* <section id="personal-details">
         <SectionCard title={"Personal Details"}>
           <PersonalDetails />
         </SectionCard>
-      </section>
+      </section> */}
     </div>
   );
 }
