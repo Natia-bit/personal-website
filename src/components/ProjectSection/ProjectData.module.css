@@ -31,6 +31,13 @@
   margin-right: 0.6rem;
 }
 
+.siteLink {
+}
+
+.siteLink label {
+  font-size: 0.5rem;
+}
+
 .planning,
 .inprogress,
 .done {

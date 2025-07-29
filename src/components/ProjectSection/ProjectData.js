@@ -8,6 +8,7 @@ import planning from "../../data/projects-planning.json";
 import inprogress from "../../data/projects-inprogress.json";
 import done from "../../data/projects-done.json";
 import TechnologiesUsed from "../TechnologiesUsed";
+import ImageWithTape from "../ImageWithTape";
 
 const categoryColors = {
   "Back End": "#a1c8e9",
@@ -66,12 +67,11 @@ export default function ProjectData() {
                       <Image
                         src={item.imgSrcOne}
                         alt={item.name}
-                        width={30}
-                        height={30}
+                        width={40}
+                        height={40}
                       />
                     ) || "Oups! What happened to the link?"}
                   </span>
-                  {/* {"[Link]" || "Oups! What happened to the link?"} */}
                 </a>
               </span>
             </div>
@@ -129,13 +129,13 @@ export default function ProjectData() {
                   rel="noopener noreferrer"
                   className={styles.link}
                 >
-                  <span>
+                  <span className={styles.siteLink}>
                     {(
                       <Image
                         src={item.imgLink}
                         alt={item.name}
-                        width={30}
-                        height={30}
+                        width={35}
+                        height={35}
                       />
                     ) || "Oups! What happened to the link?"}
                   </span>
