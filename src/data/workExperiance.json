@@ -4,7 +4,7 @@
     "endDate": "Present",
     "jobTitle": "Software Developer",
     "location": "Cape Town",
-    "company": "Freelance",
+    "company": "Self Employed",
     "techUsed": [
       { "skill": "Java", "iconSrc": "/skills/java.png" },
       { "skill": "Spring", "iconSrc": "/skills/spring-boot.svg" },
@@ -44,7 +44,7 @@
     "endDate": "August 2024",
     "jobTitle": "CAD Designer & Project Manager",
     "location": "Cape Town",
-    "company": "Consultant",
+    "company": "Contractor",
     "techUsed": [
       { "skill": "AutoCAD", "iconSrc": "/skills/autocad.png" },
       { "skill": "SketchUp", "iconSrc": "/skills/sketchup.png" },
@@ -79,7 +79,7 @@
     "endDate": "August 2017",
     "jobTitle": "Interior & CAD Designer",
     "location": "London UK / Cape Town SA",
-    "company": "CORE Cabinets & Interiors",
+    "company": "Self Employed",
     "techUsed": [
       { "skill": "AutoCAD", "iconSrc": "/skills/autocad.svg" },
       { "skill": "SketchUp", "iconSrc": "/skills/sketchup.png" },
