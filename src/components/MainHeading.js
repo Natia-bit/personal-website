@@ -31,18 +31,18 @@ export default function MainHeading({ title, children }) {
               in the software development cycle.
             </p>
             <p>
-              Currently, I&apos;m actively expanding my skill set by developing
-              various web applications for private clientele. These include a
-              joinery manufacturing list tool, informational and
-              service-oriented websites for a bakery and for a ELD teacher,
-              showcasing services and products. This work is not only about
-              writing code, it&apos;s allowed me to immerse myself in full-stack
-              development, working across both frontend and backend systems.
-              I&apos;m using tools such as Docker based databases,
-              Testcontainers for enhancing testing methodologies, and modern
-              frameworks like Next.js and Tailwind CSS to build scalable,
-              production-ready solutions. This hands-on experience continues to
-              refine my ability to deliver robust and maintainable software.
+              Currently, I&apos;m expanding my skill set by developing various
+              web applications for private clientele. These include a joinery
+              manufacturing list tool, informational and service-oriented
+              websites for a bakery and for an ELD teacher, showcasing services
+              and products. This work is not only about writing code, it&apos;s
+              allowed me to immerse myself in full-stack development, working
+              across both frontend and backend systems. I&apos;m using tools
+              such as Docker based databases, Testcontainers for enhancing
+              testing methodologies, and modern frameworks like Next.js and
+              Tailwind CSS to build scalable, production-ready solutions. This
+              hands-on experience continues to refine my ability to deliver
+              robust and maintainable software.
             </p>
             <div className={styles.quoteContainer}>
               <blockquote>
