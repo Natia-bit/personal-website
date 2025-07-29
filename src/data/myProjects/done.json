@@ -7,7 +7,7 @@
     "imgSrcOne": "/skills/github.png",
     "link": "https://planning-dinners.onrender.com/",
     "imgLink": "/personal/link.svg",
-    "description": "A weekly meal planner web application designed to simplify dinner planning. Users can add favorite meals to a rotation and customize meal categories (e.g., chicken, meat, vegetarian) to control their weekly occurrences, making meal prep effortless",
+    "description": "A weekly meal planner web application designed to simplify dinner planning. Users can add favorite meals to a rotation and customize meal categories (e.g., chicken, meat, vegetarian) to control their weekly occurrences, making meal prep effortless.",
     "techUsed": [
       { "skill": "Java", "iconSrc": "/skills/java.png" },
       { "skill": "Spring", "iconSrc": "/skills/spring-boot.svg" },

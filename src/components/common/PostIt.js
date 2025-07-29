@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import styles from "./PostIt.module.css";
-import { useState, useEffect } from "react";
 
 export default function PostIt({
   title,

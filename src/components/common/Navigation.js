@@ -1,6 +1,5 @@
 import Link from "next/link";
 import styles from "./Navigation.module.css";
-import SectionLink from "./SectionLink";
 
 export default function Navigation() {
   return (

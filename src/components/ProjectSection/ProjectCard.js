@@ -1,7 +1,9 @@
-import Bug from "../Bug";
-import PostIt from "../PostIt";
 import Image from "next/image";
+import Bug from "../common/Bug";
+import PostIt from "../common/PostIt";
 import TechnologiesUsed from "../TechnologiesUsed";
+
+import styles from "./ProjectCard.module.css";
 
 export default function ProjectCard({ project, categoryColor }) {
   const {

@@ -1,9 +1,10 @@
-import PostIt from "./PostIt";
 import Image from "next/image";
+import PostIt from "./common/PostIt";
 
-import information from "../data/perosnal-information.json";
-import presence from "../data/perosnal-presence.json";
-import interests from "../data/perosnal-interests.json";
+import information from "../data/personal/information";
+import interests from "../data/personal/interests";
+import presence from "../data/personal/presence";
+
 import styles from "./PersonalDetails.module.css";
 
 export default function PersonalDetails() {

@@ -1,14 +1,13 @@
-import ContentDisplay from "@/components/ContentDisplay";
-import SectionLink from "@/components/SectionLink";
-import styles from "./page.module.css";
-import SkillSlider from "@/components/SkillSlider";
+import SectionCard from "@/components/SectionCard";
 import ExperienceDisplay from "@/components/ExperienceDisplay";
-import PersonalDetails from "@/components/PersonalDetails";
-import workExperiance from "../data/workExperiance.json";
-import skillData from "../data/skillData.json";
 import ImageWithTape from "@/components/ImageWithTape";
 import MainHeading from "@/components/MainHeading";
+import PersonalDetails from "@/components/PersonalDetails";
 import ProjectOverview from "@/components/ProjectSection/ProjectOverview";
+import SkillSlider from "@/components/SkillSlider";
+import skillData from "../data/skillData.json";
+import workExperiance from "../data/workExperiance.json";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
@@ -18,13 +17,13 @@ export default function Home() {
       </div>
 
       <div>
-        <ContentDisplay title="Projects" className={styles.myProjects}>
+        <SectionCard title="Projects" className={styles.myProjects}>
           <ProjectOverview></ProjectOverview>
-        </ContentDisplay>
+        </SectionCard>
       </div>
 
       <section id="skills">
-        <ContentDisplay title="Skills">
+        <SectionCard title="Skills">
           <div className={styles.skillContainer}>
             <div className={styles.skillList}>
               {skillData.map((skill) => (
@@ -45,23 +44,23 @@ export default function Home() {
               className={styles.tapedImage}
             ></ImageWithTape>
           </div>
-        </ContentDisplay>
+        </SectionCard>
       </section>
 
       <section id="experience" className={styles.experienceContainer}>
-        <ContentDisplay title={"Experience"}>
+        <SectionCard title={"Experience"}>
           <div className={styles.experienceContainerWrapper}>
             {workExperiance.map((job, idx) => (
               <ExperienceDisplay key={idx} {...job} initialExpanded={idx < 2} />
             ))}
           </div>
-        </ContentDisplay>
+        </SectionCard>
       </section>
 
       <section id="personal-details">
-        <ContentDisplay title={"Personal Details"}>
+        <SectionCard title={"Personal Details"}>
           <PersonalDetails />
-        </ContentDisplay>
+        </SectionCard>
       </section>
     </div>
   );

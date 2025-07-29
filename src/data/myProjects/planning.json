@@ -2,7 +2,7 @@
   {
     "name": "Bakery website",
     "category": "Front End",
-    "description": "Informational websites with inquiry capabilities, showcasing products and inquiries",
+    "description": "Informational websites with inquiry capabilities, showcasing products and inquiries.",
     "techUsed": [
       { "skill": "React", "iconSrc": "/skills/react.png" },
       { "skill": "JavaScript", "iconSrc": "/skills/javascript.png" },
@@ -13,7 +13,7 @@
   {
     "name": "Headstart to Learning",
     "category": "Full Stack",
-    "description": "A website for an Early Childhood Development (ECD) teacher, rooted in Montessori values. This platform offers parents with essential information, alongside convenient inquiry and order options for tailored activity ackages",
+    "description": "A website for an Early Childhood Development (ECD) teacher, rooted in Montessori values. This platform offers parents with essential information, alongside convenient inquiry and order options for tailored activity packages.",
     "techUsed": [
       { "skill": "Java", "iconSrc": "/skills/java.png" },
       { "skill": "Spring", "iconSrc": "/skills/spring-boot.svg" },
@@ -27,7 +27,7 @@
   {
     "name": "WD Mymogo",
     "category": "Full Stack",
-    "description": "Where Did My Money Go is a Python application that analyzes provided bank statements to break down expenditure and offer visual graphs of spending patterns",
+    "description": "Where Did My Money Go is a Python application that analyzes provided bank statements to break down expenditure and offer visual graphs of spending patterns.",
     "techUsed": [
       { "skill": "Python", "iconSrc": "/skills/python.svg" },
       { "skill": "Django", "iconSrc": "/skills/django.png" },

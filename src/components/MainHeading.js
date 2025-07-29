@@ -1,8 +1,8 @@
-import ContentDisplay from "./ContentDisplay";
+import SectionCard from "./SectionCard";
 import ImageWithTape from "./ImageWithTape";
-import ProjectOverview from "./ProjectSection/ProjectOverview";
 
 import styles from "./MainHeading.module.css";
+
 export default function MainHeading({ title, children }) {
   return (
     <div className={styles.headingContainer}>
@@ -17,7 +17,7 @@ export default function MainHeading({ title, children }) {
         <h1>{title}</h1>
 
         <div className={styles.aboutMeText}>
-          <ContentDisplay title="A bit about me">
+          <SectionCard title="A bit about me">
             <p className={styles.text}>
               After over a decade in the design field, I reached a point of
               stagnation, where each year felt like a repetition of the last. In
@@ -61,7 +61,7 @@ export default function MainHeading({ title, children }) {
                 </cite>
               </blockquote>
             </div>
-          </ContentDisplay>
+          </SectionCard>
         </div>
       </div>
     </div>
