@@ -1,6 +1,8 @@
 .projectContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  display: flex;
+  justify-content: space-around;
   gap: 50px;
   padding: 10px;
   max-width: 500px;
@@ -28,7 +30,7 @@
 .planning,
 .inprogress {
   border-right: 2px solid var(--color-dark);
-  padding-right: 1rem;
+  padding-right: 3rem;
 }
 
 .planning h2,
@@ -36,4 +38,59 @@
 .done h2 {
   border-bottom: 2px solid var(--color-dark);
   min-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .projectContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .planning,
+  .inprogress,
+  .done {
+    width: 90%;
+    min-width: 400px;
+    padding: 15px;
+
+    border-right: none;
+    border-bottom: 2px dashed var(--color-light);
+    margin-bottom: 0;
+  }
+
+  .done {
+    border-bottom: none;
+  }
+
+  .planning h2,
+  .inprogress h2,
+  .done h2 {
+    text-align: center;
+    margin-bottom: 40px;
+
+    position: sticky; /* The magic property! */
+    /* top: calc(var(--mobile-nav-height, 80px) + 10px); */
+    /*
+      Calculate `top` based on your fixed mobile navigation height.
+      If your mobile nav is 70px tall (including its padding), and you want 10px gap:
+      top: 80px;
+    */
+    top: var(--mobile-nav-height-with-gap, 80px);
+    z-index: 10;
+    background-color: var(--color-background-card);
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid var(--color-dark);
+  }
+
+  .planning,
+  .inprogress {
+    border-right: none;
+    padding-right: 0;
+    border-bottom: 2px dashed var(--color-light);
+  }
 }
