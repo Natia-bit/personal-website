@@ -1,7 +1,7 @@
-import styles from "./SkillSlider.module.css";
+import styles from "./SkillBar.module.css";
 import Image from "next/image";
 
-export default function SkillSlider({ skillName, skillLevel, iconSrc }) {
+export default function SkillBar({ skillName, skillLevel, iconSrc }) {
   return (
     <div className={styles.skillContainer}>
       <Image

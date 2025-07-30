@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import TechnologiesUsed from "./TechnologiesUsed";
+import TechnologiesUsed from "./common/TechnologiesUsed";
 import styles from "./ExperienceDisplay.module.css";
 
 export default function ExperienceDisplay({

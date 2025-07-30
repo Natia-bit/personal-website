@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Bug from "../common/Bug";
 import PostIt from "../common/PostIt";
-import TechnologiesUsed from "../TechnologiesUsed";
+import TechnologiesUsed from "../common/TechnologiesUsed";
 
 import styles from "./ProjectCard.module.css";
 

@@ -1,5 +1,5 @@
 import SectionCard from "../SectionCard";
-import ImageWithTape from "../ImageWithTape";
+import ImageWithTape from "../common/ImageWithTape";
 
 import styles from "./Introduction.module.css";
 
@@ -11,6 +11,7 @@ export default function Introduction({ title, children }) {
         imageWidth={300}
         imageHeight={300}
         rotation={-2}
+        priority={true}
       ></ImageWithTape>
 
       <div className={styles.textWrapper}>

@@ -1,10 +1,10 @@
 import SectionCard from "@/components/SectionCard";
 import ExperienceDisplay from "@/components/ExperienceDisplay";
-import ImageWithTape from "@/components/ImageWithTape";
+import ImageWithTape from "@/components/common/ImageWithTape";
 import Introduction from "@/components/introduction/Introduction";
 import PersonalDetails from "@/components/PersonalDetails";
 import ProjectOverview from "@/components/projects/ProjectOverview";
-import SkillSlider from "@/components/SkillSlider";
+import SkillBar from "@/components/skills/SkillBar";
 import skillData from "../data/skillData.json";
 import workExperiance from "../data/workExperiance.json";
 import styles from "./page.module.css";
@@ -22,12 +22,12 @@ export default function Home() {
         </SectionCard>
       </section>
 
-      {/* <section id="skills">
+      <section id="skills">
         <SectionCard title="Skills">
           <div className={styles.skillContainer}>
             <div className={styles.skillList}>
               {skillData.map((skill) => (
-                <SkillSlider
+                <SkillBar
                   key={skill.skillName}
                   skillName={skill.skillName}
                   skillLevel={skill.skillLevel}
@@ -42,10 +42,11 @@ export default function Home() {
               imageHeight={400}
               rotation={4}
               className={styles.tapedImage}
+              priority={true}
             ></ImageWithTape>
           </div>
         </SectionCard>
-      </section> */}
+      </section>
 
       {/* <section id="experience" className={styles.experienceContainer}>
         <SectionCard title={"Experience"}>

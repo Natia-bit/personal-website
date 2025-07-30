@@ -7,6 +7,7 @@ export default function ImageWithTape({
   imageHeight,
   altText = "taped image",
   rotation = 0,
+  priority = false,
 }) {
   return (
     <div
@@ -20,6 +21,7 @@ export default function ImageWithTape({
         alt={altText}
         width={imageWidth}
         height={imageHeight}
+        priority={priority}
       />
     </div>
   );

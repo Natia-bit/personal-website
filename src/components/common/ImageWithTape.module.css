@@ -69,3 +69,9 @@
     transform: rotate(-35deg);
   }
 }
+
+@media (max-width: 768px) {
+  .imgTape {
+    max-width: 300px;
+  }
+}

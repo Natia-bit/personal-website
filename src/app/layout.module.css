@@ -37,7 +37,6 @@
   z-index: 2;
 }
 
-/* Account half screens */
 @media (max-width: 1200px) {
   .sidebar {
     width: 25%;
@@ -52,19 +51,24 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: auto;
-    padding: 10px 0;
+    /* padding: 10px 0; */
+    padding-top: 0;
+    padding-bottom: 15px;
     background: white;
     box-shadow: none;
     z-index: 1000;
     overflow-y: visible;
+    overflow-x: hidden;
+    box-sizing: border-box;
   }
 
   .main {
     margin-left: 0;
     width: 100%;
-    padding-top: var(--mobile-nav-height, 80px);
+    padding-top: calc(var(--mobile-nav-height, 80px) + 15px);
+    box-sizing: border-box;
   }
 
   .footer {
