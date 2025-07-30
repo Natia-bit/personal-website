@@ -1,9 +1,9 @@
 import SectionCard from "@/components/SectionCard";
 import ExperienceDisplay from "@/components/ExperienceDisplay";
 import ImageWithTape from "@/components/ImageWithTape";
-import Introduction from "@/components/Introduction";
+import Introduction from "@/components/introduction/Introduction";
 import PersonalDetails from "@/components/PersonalDetails";
-import ProjectOverview from "@/components/ProjectSection/ProjectOverview";
+import ProjectOverview from "@/components/projects/ProjectOverview";
 import SkillSlider from "@/components/SkillSlider";
 import skillData from "../data/skillData.json";
 import workExperiance from "../data/workExperiance.json";
@@ -12,15 +12,15 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div>
-      <div className={styles.intro}>
+      <section id="introduction" className={styles.intro}>
         <Introduction title="Hello! I'm Natia"></Introduction>
-      </div>
+      </section>
 
-      {/* <div>
+      <section id="projects">
         <SectionCard title="Projects" className={styles.myProjects}>
           <ProjectOverview></ProjectOverview>
         </SectionCard>
-      </div> */}
+      </section>
 
       {/* <section id="skills">
         <SectionCard title="Skills">

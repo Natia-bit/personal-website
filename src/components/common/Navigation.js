@@ -5,7 +5,7 @@ export default function Navigation() {
   return (
     <ul className={styles.navList}>
       <li className={styles.navItem}>
-        <Link href="/">About Me</Link>
+        <Link href="#introduction">About Me</Link>
       </li>
       <li className={styles.navItem}>
         <Link href="#projects">Projects</Link>

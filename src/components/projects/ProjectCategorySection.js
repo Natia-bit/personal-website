@@ -1,4 +1,4 @@
-import styles from "./ProjectData.module.css";
+import styles from "./ProjectCategorySection.module.css";
 import planning from "../../data/myProjects/planning";
 import inprogress from "../../data/myProjects/inprogress";
 import done from "../../data/myProjects/done";
@@ -12,7 +12,7 @@ const categoryColors = {
   default: "#ffc",
 };
 
-export default function ProjectData() {
+export default function ProjectCategorySection() {
   return (
     <div className={styles.projectContainer}>
       <div className={styles.planning}>

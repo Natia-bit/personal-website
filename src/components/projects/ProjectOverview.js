@@ -1,5 +1,5 @@
 import StackLabel from "../TeckStack/StackLabel";
-import ProjectData from "./ProjectData";
+import ProjectData from "./ProjectCategorySection";
 
 import styles from "./ProjectOverview.module.css";
 

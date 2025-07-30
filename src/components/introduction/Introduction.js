@@ -1,5 +1,5 @@
-import SectionCard from "./SectionCard";
-import ImageWithTape from "./ImageWithTape";
+import SectionCard from "../SectionCard";
+import ImageWithTape from "../ImageWithTape";
 
 import styles from "./Introduction.module.css";
 
