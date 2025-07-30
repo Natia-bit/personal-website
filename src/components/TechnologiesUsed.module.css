@@ -1,28 +1,20 @@
-.sketchy {
-  background-color: transparent;
-  border-style: solid;
-  border-width: 2px;
-  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
-  box-sizing: border-box;
-  cursor: default;
-  display: inline-block;
+.techContainer {
+  background-color: rgba(255, 255, 255, 0.5);
   font-size: 0.7rem;
-  line-height: 20px;
-  padding: 0.3rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  border-bottom-left-radius: 15px 255px;
-  border-bottom-right-radius: 225px 15px;
-  border-top-left-radius: 255px 15px;
-  border-top-right-radius: 15px 225px;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  margin: 0.3rem;
+  box-shadow: none;
+  border: none;
+  cursor: default;
 }
 
 .image {
-  margin-right: 0.5em;
+  margin-right: 0.4em;
+}
+
+.name {
+  color: var(--color-text-main);
 }

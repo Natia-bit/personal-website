@@ -12,7 +12,7 @@
       { "skill": "Java", "iconSrc": "/skills/java.png" },
       { "skill": "Spring", "iconSrc": "/skills/spring-boot.svg" },
       { "skill": "MySQL", "iconSrc": "/skills/mysql.png" },
-      { "skill": "JPA Hibernate", "iconSrc": "/skills/hibernate.png" },
+      { "skill": "Hibernate", "iconSrc": "/skills/hibernate.png" },
       { "skill": "JavaScript", "iconSrc": "/skills/javascript.png" },
       { "skill": "CSS", "iconSrc": "/skills/css.png" },
       { "skill": "HTML", "iconSrc": "/skills/html.png" }

@@ -3,14 +3,13 @@
     "name": "ChipChop",
     "gitLink": "https://github.com/Natia-bit/chipchop",
     "imgSrcOne": "/skills/github.png",
-    "category": "Full Stack",
+    "category": "Back End",
     "bugs": "true",
     "description": "ChipChop is a web application that streamlines the process of calculating board components for the joinery industry. It eliminates the need for manual calculations or slow spreadsheets by generating precise cut lists from user-inputted cabinet dimensions, significantly improving efficiency for joiners.",
     "techUsed": [
       { "skill": "Java", "iconSrc": "/skills/java.png" },
       { "skill": "Spring", "iconSrc": "/skills/spring-boot.svg" },
-      { "skill": "Posgres", "iconSrc": "/skills/postgresql.png" },
-      { "skill": "Test Containers", "iconSrc": "/skills/testcontainers.png" }
+      { "skill": "Posgres", "iconSrc": "/skills/postgresql.png" }
     ]
   },
   {

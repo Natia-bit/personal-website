@@ -1,9 +1,13 @@
 import Image from "next/image";
 import styles from "./TechnologiesUsed.module.css";
 
-export default function TechnologiesUsed({ iconSrc, skillName }) {
+export default function TechnologiesUsed({ iconSrc, skillName, bgColor }) {
   return (
-    <div className={styles.sketchy}>
+    <div
+      className={styles.techContainer}
+      style={bgColor ? { backgroundColor: bgColor } : {}}
+    >
+      {/* <span>⎡</span> */}
       <Image
         src={iconSrc}
         alt={`${skillName} icon`}
@@ -12,6 +16,7 @@ export default function TechnologiesUsed({ iconSrc, skillName }) {
         className={styles.image}
       />
       <label className={styles.name}>{skillName}</label>
+      {/* <span>⎦</span> */}
     </div>
   );
 }

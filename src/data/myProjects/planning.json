@@ -20,7 +20,7 @@
       { "skill": "Posgres", "iconSrc": "/skills/postgresql.png" },
       { "skill": "React", "iconSrc": "/skills/react.png" },
       { "skill": "JavaScript", "iconSrc": "/skills/javascript.png" },
-      { "skill": " Tailwind CSS", "iconSrc": "/skills/css.png" },
+      { "skill": " Tailwind", "iconSrc": "/skills/tailwind.png" },
       { "skill": "HTML", "iconSrc": "/skills/html.png" }
     ]
   },
@@ -34,7 +34,7 @@
       { "skill": "Posgres", "iconSrc": "/skills/postgresql.png" },
       { "skill": "React", "iconSrc": "/skills/react.png" },
       { "skill": "JavaScript", "iconSrc": "/skills/javascript.png" },
-      { "skill": " Tailwind CSS", "iconSrc": "/skills/css.png" },
+      { "skill": " Tailwind", "iconSrc": "/skills/tailwind.png" },
       { "skill": "HTML", "iconSrc": "/skills/html.png" }
     ]
   }
