@@ -133,5 +133,16 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    font-size: var(--mobile-primary-font-size);
+  }
+
+  .dateAndToggleButton {
+    width: 100%;
+    justify-content: flex-end;
+    font-size: 0.9rem;
+  }
+
+  .company {
+    font-size: 1.2rem;
   }
 }
