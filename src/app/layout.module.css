@@ -48,12 +48,9 @@
 
 @media (max-width: 768px) {
   .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
+    width: 100%;
     height: auto;
-    /* padding: 10px 0; */
+    padding: 10px 0;
     padding-top: 0;
     padding-bottom: 15px;
     background: white;
