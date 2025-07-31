@@ -1,0 +1,28 @@
+.footerContainer {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  font-size: 0.8rem;
+  width: 100%;
+  padding-top: 0.2rem;
+  padding-bottom: 0.6rem;
+}
+
+.bugOne {
+  margin-left: -10px;
+  position: relative;
+  top: -3px;
+  z-index: 1;
+}
+
+.bugTwo {
+  margin-left: -18px;
+  display: inline-block;
+  transform: rotate(45deg);
+  position: relative;
+  top: 10px;
+  z-index: 2;
+}

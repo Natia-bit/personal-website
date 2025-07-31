@@ -1,4 +1,4 @@
-import SectionCard from "@/components/SectionCard";
+import SectionCard from "@/components/common/SectionCard";
 import ExperienceDisplay from "@/components/experience/ExperienceDisplay";
 import ImageWithTape from "@/components/common/ImageWithTape";
 import Introduction from "@/components/introduction/Introduction";

@@ -1,8 +1,9 @@
-import Navigation from "@/components/common/Navigation";
+import Navigation from "@/components/layout/Navigation";
 import "./globals.css";
 import Bug from "@/components/common/Bug";
 
 import styles from "./layout.module.css";
+import Footer from "@/components/layout/Footer";
 
 export const metadata = {
   title: "Natia Natisvili",
@@ -19,17 +20,7 @@ export default function RootLayout({ children }) {
             </aside>
             <main className={styles.main}>{children}</main>
           </div>
-
-          <footer>
-            Made with bugs
-            <span className={styles.bugOne}>
-              <Bug outline="#FFFFFF" />
-            </span>
-            <span className={styles.bugTwo}>
-              <Bug outline="#FFFFFF" />
-            </span>
-            sweat, and tears{" "}
-          </footer>
+          <Footer />
         </div>
       </body>
     </html>

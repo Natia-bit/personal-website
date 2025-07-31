@@ -1,4 +1,4 @@
-import SectionCard from "../SectionCard";
+import SectionCard from "../common/SectionCard";
 import ImageWithTape from "../common/ImageWithTape";
 
 import styles from "./Introduction.module.css";
