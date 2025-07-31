@@ -20,6 +20,7 @@ export default function RootLayout({ children }) {
             </aside>
             <main className={styles.main}>{children}</main>
           </div>
+
           <Footer />
         </div>
       </body>

@@ -1,14 +1,12 @@
 .footerContainer {
   display: flex;
-
   justify-content: center;
   align-items: center;
   background-color: var(--color-dark);
   color: var(--color-light);
   font-size: 0.8rem;
   width: 100%;
-  padding-top: 0.2rem;
-  padding-bottom: 0.6rem;
+  padding: 0.2rem 0 1rem;
 }
 
 .bugOne {
