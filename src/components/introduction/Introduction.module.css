@@ -105,15 +105,14 @@
   }
 
   .text {
-    font-size: 0.9em;
+    font-size: var(--mobile-primary-font-size);
     align-items: left;
     margin-bottom: 1em;
   }
 
   .quoteContainer {
     max-width: 100%;
-    font-size: 1.2em;
-    padding: 0 15px;
+    font-size: 1.4rem;
     margin-top: 2em;
   }
 }

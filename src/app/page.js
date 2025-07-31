@@ -1,5 +1,5 @@
 import SectionCard from "@/components/SectionCard";
-import ExperienceDisplay from "@/components/ExperienceDisplay";
+import ExperienceDisplay from "@/components/experience/ExperienceDisplay";
 import ImageWithTape from "@/components/common/ImageWithTape";
 import Introduction from "@/components/introduction/Introduction";
 import PersonalDetails from "@/components/PersonalDetails";
@@ -48,7 +48,7 @@ export default function Home() {
         </SectionCard>
       </section>
 
-      {/* <section id="experience" className={styles.experienceContainer}>
+      <section id="experience" className={styles.experienceContainer}>
         <SectionCard title={"Experience"}>
           <div className={styles.experienceContainerWrapper}>
             {workExperiance.map((job, idx) => (
@@ -56,7 +56,7 @@ export default function Home() {
             ))}
           </div>
         </SectionCard>
-      </section> */}
+      </section>
 
       {/* <section id="personal-details">
         <SectionCard title={"Personal Details"}>

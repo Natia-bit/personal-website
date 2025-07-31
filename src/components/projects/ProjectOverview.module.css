@@ -21,6 +21,7 @@
     justify-content: space-around;
     margin: 5px 0;
     gap: 15px;
+    font-size: var(--mobile-secondery-font-size);
   }
 
   .data {

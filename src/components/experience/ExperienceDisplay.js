@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import TechnologiesUsed from "./common/TechnologiesUsed";
+import TechnologiesUsed from "../common/TechnologiesUsed";
 import styles from "./ExperienceDisplay.module.css";
 
 export default function ExperienceDisplay({
@@ -65,6 +65,7 @@ export default function ExperienceDisplay({
                 key={idx}
                 iconSrc={skill.iconSrc}
                 skillName={skill.skill}
+                bgColor="var( --color-light)"
               />
             ))}
           </div>

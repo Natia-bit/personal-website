@@ -17,6 +17,16 @@
   --mobile-nav-height: 100px;
   --mobile-nav-height-with-gap: 80px;
   --color-background-card: white;
+
+  --mobile-primary-font-size: 0.85rem;
+  --mobile-secondery-font-size: 0.7rem;
+}
+
+body {
+  font-family: "JetBrains Mono";
+  color: var(--color-text-main);
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -28,13 +38,6 @@ h2,
 h3 {
   font-family: "Sue Ellen Francisco";
   color: var(--color-text-header);
-}
-
-body {
-  font-family: "JetBrains Mono";
-  color: var(--color-text-main);
-  margin: 0;
-  padding: 0;
 }
 
 footer {

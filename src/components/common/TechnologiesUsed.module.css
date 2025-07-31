@@ -1,7 +1,7 @@
 .techContainer {
   background-color: rgba(255, 255, 255, 0.5);
   font-size: 0.7rem;
-  padding: 0.2rem 0.6rem;
+  padding: 0.3rem 0.8rem;
   border-radius: 9999px;
   display: flex;
   align-items: center;
@@ -17,4 +17,10 @@
 
 .name {
   color: var(--color-text-main);
+}
+
+@media (max-width: 768px) {
+  .name {
+    font-size: var(--mobile-secondery-font-size);
+  }
 }
