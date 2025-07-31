@@ -1,24 +1,51 @@
+"use client";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "./Navigation.module.css";
 
+const sections = [
+  { id: "introduction", label: "About Me" },
+  { id: "projects", label: "Projects" },
+  { id: "skills", label: "Skills" },
+  { id: "experience", label: "Work Experience" },
+  { id: "personal-details", label: "Personal Details" },
+];
+
 export default function Navigation() {
+  const [activeSection, setActiveSection] = useState("");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offsets = sections.map(({ id }) => {
+        const el = document.getElementById(id);
+        if (!el) return { id, offset: Infinity };
+        const rect = el.getBoundingClientRect();
+        return { id, offset: Math.abs(rect.top) };
+      });
+
+      const nearest = offsets.reduce((prev, curr) =>
+        curr.offset < prev.offset ? curr : prev
+      );
+      setActiveSection(nearest.id);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <ul className={styles.navList}>
-      <li className={styles.navItem}>
-        <Link href="#introduction">About Me</Link>
-      </li>
-      <li className={styles.navItem}>
-        <Link href="#projects">Projects</Link>
-      </li>
-      <li className={styles.navItem}>
-        <Link href="#skills">Skills</Link>
-      </li>
-      <li className={styles.navItem}>
-        <Link href="#experience">Work Experience</Link>
-      </li>
-      <li className={styles.navItem}>
-        <Link href="#personal-details">Personal Details</Link>
-      </li>
+      {sections.map(({ id, label }) => (
+        <li
+          key={id}
+          className={`${styles.navItem} ${
+            activeSection === id ? styles.active : styles.inactive
+          }`}
+        >
+          <Link href={`#${id}`}>{label}</Link>
+        </li>
+      ))}
     </ul>
   );
 }
