@@ -1,6 +1,4 @@
 .projectContainer {
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr); */
   display: flex;
   justify-content: space-around;
   gap: 50px;
@@ -55,7 +53,6 @@
     padding: 10px;
 
     border-right: none;
-    /* border-bottom: 2px dashed var(--color-light); */
     margin-bottom: 0;
   }
 
@@ -82,7 +79,8 @@
   }
 
   .planning,
-  .inprogress {
+  .inprogress,
+  .done {
     border-right: none;
     padding-right: 0;
     border-bottom: 2px dashed var(--color-light);

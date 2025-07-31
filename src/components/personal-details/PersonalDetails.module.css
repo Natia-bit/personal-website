@@ -66,21 +66,6 @@
   color: var(--color-grey);
 }
 
-@media (min-width: 768px) {
-  .personalContainer {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .information,
-  .presence {
-    border-right: 2px solid var(--color-dark);
-    padding-right: 1rem;
-  }
-
-  .resume {
-    border: none;
-  }
-}
-
 @media (min-width: 1200px) {
   .personalContainer {
     grid-template-columns: repeat(4, 1fr);
@@ -102,8 +87,38 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .personalContainer {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 95%;
+    gap: 20px;
+  }
+
+  .information,
+  .resume,
+  .presence,
+  .interests {
+    border-right: none;
+    border-bottom: 2px dashed var(--color-light);
+  }
+
+  .information h2,
+  .resume h2,
+  .presence h2,
+  .interests h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    position: sticky;
+    top: var(--mobile-nav-height-with-gap, 80px);
+    z-index: 20;
+    background-color: var(--color-background-card);
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid var(--color-dark);
   }
 }

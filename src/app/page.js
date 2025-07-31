@@ -2,7 +2,7 @@ import SectionCard from "@/components/SectionCard";
 import ExperienceDisplay from "@/components/experience/ExperienceDisplay";
 import ImageWithTape from "@/components/common/ImageWithTape";
 import Introduction from "@/components/introduction/Introduction";
-import PersonalDetails from "@/components/PersonalDetails";
+import PersonalDetails from "@/components/personal-details/PersonalDetails";
 import ProjectOverview from "@/components/projects/ProjectOverview";
 import SkillBar from "@/components/skills/SkillBar";
 import skillData from "../data/skillData.json";
@@ -58,11 +58,11 @@ export default function Home() {
         </SectionCard>
       </section>
 
-      {/* <section id="personal-details">
+      <section id="personal-details">
         <SectionCard title={"Personal Details"}>
           <PersonalDetails />
         </SectionCard>
-      </section> */}
+      </section>
     </div>
   );
 }
