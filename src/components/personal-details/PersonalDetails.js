@@ -11,7 +11,7 @@ export default function PersonalDetails() {
   return (
     <div className={styles.personalContainer}>
       <div className={styles.information}>
-        <h2>Persoanl Information</h2>
+        <h2>Personal Information</h2>
         <PostIt title="Contact">
           <p>email: {information.contact.email}</p>
         </PostIt>
