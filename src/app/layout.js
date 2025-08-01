@@ -1,9 +1,9 @@
-import Navigation from "@/components/Navigation";
+import Navigation from "@/components/layout/Navigation";
 import "./globals.css";
-import Image from "next/image";
-import Bug from "@/components/Bug";
+import Bug from "@/components/common/Bug";
 
 import styles from "./layout.module.css";
+import Footer from "@/components/layout/Footer";
 
 export const metadata = {
   title: "Natia Natisvili",
@@ -21,32 +21,7 @@ export default function RootLayout({ children }) {
             <main className={styles.main}>{children}</main>
           </div>
 
-          <footer>
-            {/* <span className={styles.botlLeft}>
-              <Image
-                src="/footer/nut.png"
-                alt="nut"
-                width={18}
-                height={18}
-              ></Image>
-            </span> */}
-            Made with bugs
-            <span className={styles.bugOne}>
-              <Bug outline="#FFFFFF" />
-            </span>
-            <span className={styles.bugTwo}>
-              <Bug outline="#FFFFFF" />
-            </span>
-            sweat, and tears{" "}
-            {/* <span className={styles.boltRight}>
-              <Image
-                src="/footer/nut.png"
-                alt="nut"
-                width={18}
-                height={18}
-              ></Image>
-            </span> */}
-          </footer>
+          <Footer />
         </div>
       </body>
     </html>

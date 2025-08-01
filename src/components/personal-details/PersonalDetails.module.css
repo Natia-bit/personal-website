@@ -1,0 +1,124 @@
+.personalContainer {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 20px;
+}
+
+.personalContainer h2,
+.personalContainer h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.personalContainer h2 {
+  font-size: 1.6em;
+}
+
+.personalContainer h3 {
+  font-size: 1.4em;
+}
+
+.link {
+  color: var(--color-text-main);
+  text-decoration: none;
+}
+
+.information,
+.resume,
+.presence,
+.interests {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.information,
+.resume,
+.presence {
+  border-right: 2px solid var(--color-dark);
+  padding-right: 1rem;
+}
+
+.information h2,
+.resume h2,
+.presence h2,
+.resume h2,
+.interests h2 {
+  border-bottom: 2px solid var(--color-dark);
+  min-width: 100%;
+}
+
+.resume a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.description {
+  color: var(--color-grey);
+}
+
+@media (min-width: 1200px) {
+  .personalContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .information,
+  .resume,
+  .presence {
+    border-right: 2px solid var(--color-dark);
+    padding-right: 1rem;
+  }
+
+  .information h2,
+  .resume h2,
+  .presence h2,
+  .resume h2,
+  .interests h2 {
+    border-bottom: 2px solid var(--color-dark);
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .personalContainer {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 95%;
+    gap: 20px;
+  }
+
+  .information,
+  .resume,
+  .presence,
+  .interests {
+    border-right: none;
+    border-bottom: 2px dashed var(--color-light);
+  }
+
+  .information h2,
+  .resume h2,
+  .presence h2,
+  .interests h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    position: sticky;
+    top: var(--mobile-nav-height-with-gap, 80px);
+    z-index: 20;
+    background-color: var(--color-background-card);
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid var(--color-dark);
+  }
+}

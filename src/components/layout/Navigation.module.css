@@ -1,0 +1,127 @@
+/* --- Default (Desktop) Styles --- */
+.navList {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.navItem {
+  min-width: 150px;
+  max-width: 150px;
+  position: relative;
+  background: var(--color-secondery);
+  height: 5em;
+  width: 6em;
+  padding: 2em;
+  margin-top: 2em;
+  transition: transform 0.2s linear;
+}
+
+.navItem {
+  transition: all 0.3s ease;
+}
+
+.navItem a {
+  text-decoration: none;
+  color: var(--color-text-header);
+  font-family: "Sue Ellen Francisco";
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.navList .navItem:nth-child(even) {
+  transform: rotate(4deg);
+  position: relative;
+  margin-right: 2rem;
+}
+
+.navList .navItem:nth-child(odd) {
+  transform: rotate(-3deg);
+  position: relative;
+}
+
+.navList .navItem:hover,
+.navList .navItem:focus {
+  box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+  position: relative;
+  z-index: 5;
+}
+
+.navList .navItem {
+  box-shadow: 2px 2px 5px rgba(33, 33, 33, 0.5);
+}
+
+.active {
+  transform: scale(1.1) !important;
+  box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  background: var(--color-secondery);
+  opacity: 1;
+  rotate: 0deg;
+}
+
+.inactive {
+  opacity: 0.7;
+}
+
+/* --- Mobile Styles --- */
+@media (max-width: 768px) {
+  .navList {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0 5px;
+    margin: 0;
+    position: static;
+    box-sizing: border-box;
+  }
+
+  .navItem {
+    margin: 0;
+    transform: none;
+    background: var(--color-secondery);
+    height: 70px;
+
+    padding: 0 3px;
+    min-width: 45px;
+    max-width: 65px;
+
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px rgba(33, 33, 33, 0.5);
+
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .navList .navItem:nth-child(even),
+  .navList .navItem:nth-child(odd) {
+    transform: none;
+    margin: 0;
+  }
+
+  .navItem a {
+    font-size: 16px;
+    color: var(--color-text-header);
+    align-items: center;
+  }
+
+  .navList .navItem.active {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3) !important;
+    transform: none !important;
+    z-index: 10;
+  }
+
+  .navList .navItem.inactive {
+    box-shadow: 2px 2px 5px rgba(33, 33, 33, 0.2) !important;
+    opacity: 0.5;
+  }
+}

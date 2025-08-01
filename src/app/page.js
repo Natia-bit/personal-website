@@ -1,34 +1,33 @@
-import ContentDisplay from "@/components/ContentDisplay";
-import SectionLink from "@/components/SectionLink";
-import styles from "./page.module.css";
-import SkillSlider from "@/components/SkillSlider";
-import ExperienceDisplay from "@/components/ExperienceDisplay";
-import PersonalDetails from "@/components/PersonalDetails";
-import workExperiance from "../data/workExperiance.json";
+import SectionCard from "@/components/common/SectionCard";
+import ExperienceDisplay from "@/components/experience/ExperienceDisplay";
+import ImageWithTape from "@/components/common/ImageWithTape";
+import Introduction from "@/components/introduction/Introduction";
+import PersonalDetails from "@/components/personal-details/PersonalDetails";
+import ProjectOverview from "@/components/projects/ProjectOverview";
+import SkillBar from "@/components/skills/SkillBar";
 import skillData from "../data/skillData.json";
-import ImageWithTape from "@/components/ImageWithTape";
-import MainHeading from "@/components/MainHeading";
-import ProjectOverview from "@/components/ProjectSection/ProjectOverview";
+import workExperiance from "../data/workExperiance.json";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <div>
-      <div className={styles.intro}>
-        <MainHeading title="Hello! I'm Natia"></MainHeading>
-      </div>
+      <section id="introduction" className={styles.intro}>
+        <Introduction title="Hello! I'm Natia"></Introduction>
+      </section>
 
-      <div>
-        <ContentDisplay title="Projects" className={styles.myProjects}>
+      <section id="projects">
+        <SectionCard title="Projects" className={styles.myProjects}>
           <ProjectOverview></ProjectOverview>
-        </ContentDisplay>
-      </div>
+        </SectionCard>
+      </section>
 
       <section id="skills">
-        <ContentDisplay title="Skills">
+        <SectionCard title="Skills">
           <div className={styles.skillContainer}>
             <div className={styles.skillList}>
               {skillData.map((skill) => (
-                <SkillSlider
+                <SkillBar
                   key={skill.skillName}
                   skillName={skill.skillName}
                   skillLevel={skill.skillLevel}
@@ -43,25 +42,26 @@ export default function Home() {
               imageHeight={400}
               rotation={4}
               className={styles.tapedImage}
+              priority={true}
             ></ImageWithTape>
           </div>
-        </ContentDisplay>
+        </SectionCard>
       </section>
 
       <section id="experience" className={styles.experienceContainer}>
-        <ContentDisplay title={"Experience"}>
+        <SectionCard title={"Experience"}>
           <div className={styles.experienceContainerWrapper}>
             {workExperiance.map((job, idx) => (
               <ExperienceDisplay key={idx} {...job} initialExpanded={idx < 2} />
             ))}
           </div>
-        </ContentDisplay>
+        </SectionCard>
       </section>
 
       <section id="personal-details">
-        <ContentDisplay title={"Personal Details"}>
+        <SectionCard title={"Personal Details"}>
           <PersonalDetails />
-        </ContentDisplay>
+        </SectionCard>
       </section>
     </div>
   );

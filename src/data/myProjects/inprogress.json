@@ -1,0 +1,31 @@
+[
+  {
+    "name": "ChipChop",
+    "gitLink": "https://github.com/Natia-bit/chipchop",
+    "imgSrcOne": "/skills/github.png",
+    "category": "Back End",
+    "bugs": "true",
+    "description": "ChipChop is a web application that streamlines the process of calculating board components for the joinery industry. It eliminates the need for manual calculations or slow spreadsheets by generating precise cut lists from user-inputted cabinet dimensions, significantly improving efficiency for joiners.",
+    "techUsed": [
+      { "skill": "Java", "iconSrc": "/skills/java.png" },
+      { "skill": "Spring", "iconSrc": "/skills/spring-boot.svg" },
+      { "skill": "Posgres", "iconSrc": "/skills/postgresql.png" }
+    ]
+  },
+  {
+    "name": "My website",
+    "gitLink": "https://github.com/Natia-bit/personal-website",
+    "imgSrcOne": "/skills/github.png",
+    "link": "https://natia-natisvili.vercel.app/",
+    "imgLink": "/personal/link.svg",
+    "category": "Front End",
+    "bugs": "true",
+    "description": "Dive into my latest web development projects. Here, you'll find examples of my work in action, featuring the technologies and approaches I use to build scalable and maintainable applications.",
+    "techUsed": [
+      { "skill": "React", "iconSrc": "/skills/react.png" },
+      { "skill": "JavaScript", "iconSrc": "/skills/javascript.png" },
+      { "skill": "CSS", "iconSrc": "/skills/css.png" },
+      { "skill": "HTML", "iconSrc": "/skills/html.png" }
+    ]
+  }
+]
