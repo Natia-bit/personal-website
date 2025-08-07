@@ -13,36 +13,46 @@
   text-align: center;
 }
 
-.titleSection {
-  margin-bottom: 2rem;
+.citing {
+  display: block;
+  font-size: 0.9em;
+  color: var(--color-grey);
+  margin-top: 1em;
+  font-style: normal;
+  text-align: right;
 }
 
-.gameSubtitle {
-  font-size: 1.125rem;
-  color: #d1d5db;
-  margin-top: 0.5rem;
+.citing a {
+  text-decoration: none;
+  color: var(--color-grey);
+}
+
+.description {
+  margin: 2em;
+}
+
+.gameBox {
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 48rem;
+  display: flex;
+  flex-direction: row;
 }
 
 .gamePanel {
-  /* background-color: rgba(31, 41, 55, 0.9); */
   padding: 1.5rem;
-  border-radius: 1.5rem;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-    0 10px 10px -5px rgba(0, 0, 0, 0.04);
   width: 100%;
   max-width: 48rem;
 }
 
 .scoreBoard {
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 1.5rem;
   gap: 2rem;
 }
 
 .scoreText {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 

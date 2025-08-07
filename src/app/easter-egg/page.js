@@ -122,7 +122,7 @@ export default function EasterEgg() {
         title="Code Bugs: A Galactic Misadventure"
         className={styles.gameContainer}
       >
-        <div className={styles.titleSection}>
+        <div className={styles.description}>
           <p>
             Imagine, dear visitor, a bug in the code—not the creepy-crawly kind
             you&apos;d shoo away with a slipper, but a mischievous gremlin
@@ -145,20 +145,24 @@ export default function EasterEgg() {
             absurdity—because in the grand code of life, a bug or two just means
             the universe is still having a laugh.
           </p>
+          <cite className={styles.citing}>
+            Described with a dash of cosmic wit by
+            <a href="https://www.grok.com"> Grok </a>
+            <em>
+              created by <a href="https://www.x.ai"> xAI. </a>
+            </em>
+          </cite>
         </div>
 
         <div className={styles.gamePanel}>
           <div className={styles.scoreBoard}>
             <div className={styles.scoreText}>
-              Bugs Found: <span className={styles.scoreFound}>{bugsFound}</span>
+              Bugs Whacked:
+              <span className={styles.scoreFound}> {bugsFound}</span>
             </div>
             <div className={styles.scoreText}>
-              Bugs Missed:{" "}
-              <span className={styles.scoreMissed}>{bugsMissed}</span>
-            </div>
-            <div className={styles.scoreText}>
-              Total Bugs:
-              <span className={styles.scoreTotal}> {totalBugsToAppear}</span>
+              Bugs Missed:
+              <span className={styles.scoreMissed}> {bugsMissed}</span>
             </div>
           </div>
 
@@ -203,28 +207,30 @@ export default function EasterEgg() {
             </div>
           )}
 
-          <div
-            className={`${styles.gridContainer} ${
-              isGameActive && !isGamePaused ? "" : styles.gridCellDisabled
-            }`}
-            style={{ gridTemplateColumns: `repeat(${GRID_SIZE}, 1fr)` }}
-          >
-            {Array.from({ length: GRID_SIZE * GRID_SIZE }).map((_, index) => (
-              <div
-                key={index}
-                className={styles.gridCell}
-                onClick={() => whackBug(index)}
-              >
-                {activeBugIndex === index && (
-                  <div
-                    className={styles.bugBounceIn}
-                    style={{ transform: `rotate(${bugRotation}deg)` }}
-                  >
-                    <Bug width={40} height={40} />
-                  </div>
-                )}
-              </div>
-            ))}
+          <div className={styles.test}>
+            <div
+              className={`${styles.gridContainer} ${
+                isGameActive && !isGamePaused ? "" : styles.gridCellDisabled
+              }`}
+              style={{ gridTemplateColumns: `repeat(${GRID_SIZE}, 1fr)` }}
+            >
+              {Array.from({ length: GRID_SIZE * GRID_SIZE }).map((_, index) => (
+                <div
+                  key={index}
+                  className={styles.gridCell}
+                  onClick={() => whackBug(index)}
+                >
+                  {activeBugIndex === index && (
+                    <div
+                      className={styles.bugBounceIn}
+                      style={{ transform: `rotate(${bugRotation}deg)` }}
+                    >
+                      <Bug width={40} height={40} />
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </SectionCard>
