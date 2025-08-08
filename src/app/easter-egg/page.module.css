@@ -119,6 +119,9 @@
 } */
 
 @media (max-width: 768px) {
+  .header {
+    margin-top: -40px;
+  }
   .mainContainer {
     flex-direction: column;
   }

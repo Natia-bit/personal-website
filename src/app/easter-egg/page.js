@@ -117,15 +117,15 @@ export default function EasterEgg() {
 
   return (
     <div>
-      <h1>De-bugging</h1>
+      <h1 className={styles.header}>De-bugging</h1>
       <SectionCard
         title="Code Bugs: A Galactic Misadventure"
         className={styles.gameContainer}
       >
         <div className={styles.description}>
           <p>
-            Imagine, dear visitor, a bug in the code—not the creepy-crawly kind
-            you&apos;d shoo away with a slipper, but a mischievous gremlin
+            Imagine, dear visitor, a bug in the code — not the creepy-crawly
+            kind you&apos;d shoo away with a slipper, but a mischievous gremlin
             lurking in the digital tapestry of this very website. These are the
             tiny hiccups in the grand cosmic program, as if the universe&apos;s
             Great Coder, distracted by a particularly potent Pan-Galactic Gargle
@@ -134,16 +134,15 @@ export default function EasterEgg() {
             Macarena instead of loading, or a game that insists two plus two is
             a fish. These bugs are the universe&apos;s way of giggling at its
             own cleverness, reminding us that even the slickest websites, like
-            spaceships, sometimes veer off course into a black hole of “whoops.”
+            spaceships, sometimes veer off course into a black hole of “whoops”.
           </p>
           <p>
             In this little Easter egg, you&apos;ll whack these digital rascals
-            in a game, not unlike chasing errant Vogon poetry out of your inbox.
-            Each bug you squash is a tiny victory over chaos, a nod to the
-            tireless software engineers who debug the universe one line at a
-            time. So, grab your virtual towel, tap those bugs, and enjoy the
-            absurdity—because in the grand code of life, a bug or two just means
-            the universe is still having a laugh.
+            in a game. Each bug you squash is a tiny victory over chaos, a nod
+            to the tireless software engineers who debug the universe one line
+            at a time. So, grab your virtual towel, tap those bugs, and enjoy
+            the absurdity—because in the grand code of life, a bug or two just
+            means the universe is still having a laugh.
           </p>
         </div>
 
