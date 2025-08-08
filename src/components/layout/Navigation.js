@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "./Navigation.module.css";
+import Bug from "../common/Bug";
 
 const sections = [
   { id: "introduction", label: "About Me" },
@@ -43,9 +44,15 @@ export default function Navigation() {
             activeSection === id ? styles.active : styles.inactive
           }`}
         >
-          <Link href={`#${id}`}>{label}</Link>
+          <Link href={`/#${id}`}>{label}</Link>
         </li>
       ))}
+
+      <Link href="/easter-egg" className={styles.test}>
+        <div className={styles.glitchWrapper}>
+          <Bug width={60} height={60} className={styles.bug} />
+        </div>
+      </Link>
     </ul>
   );
 }

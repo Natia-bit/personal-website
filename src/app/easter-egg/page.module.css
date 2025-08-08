@@ -1,0 +1,173 @@
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2em;
+}
+
+.theGame {
+  width: 750px;
+  height: auto;
+}
+
+.panel {
+  padding-left: 3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.scoreContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.scoreCard {
+  width: 150px;
+  margin: 2em;
+  padding-top: 1em;
+  text-align: center;
+}
+
+.score {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.bugsFound {
+  background-color: #bcdfc9;
+}
+
+.bugsMissed {
+  background-color: #ff4e50;
+}
+
+.scoreCard p {
+  color: var(--color-text-main);
+}
+
+.gameState {
+  display: flex;
+  justify-content: center;
+}
+
+.gameState p {
+  text-align: center;
+}
+
+.description {
+  margin: 2em;
+}
+
+.difficultyButtons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button {
+  cursor: pointer !important;
+  border: 1px solid var(--color-dark);
+  font-family: "JetBrains Mono";
+  border-radius: 200px 5px 200px 5px / 5px 200px 5px 200px;
+  min-width: 80px;
+  padding: 0.4rem 1rem 0.4rem 1rem;
+  text-align: center;
+  margin: 0.8em;
+}
+
+.gridContainer {
+  /* background-image: url("https://placehold.co/1200x800/222222/cccccc?text=Code+Background");
+  background-size: cover;
+  background-position: center; */
+  background: white;
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.5rem;
+  border: 3px solid var(--color-dark);
+}
+
+.gamePanel {
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 48rem;
+}
+
+.gridCell {
+  background-color: transparent;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  transition: all 0.1s ease-in-out;
+}
+
+/* @keyframes bounce-in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bug-bounce-in {
+  animation: bounce-in 0.5s ease-out forwards;
+} */
+
+@media (max-width: 768px) {
+  .header {
+    margin-top: -40px;
+  }
+  .mainContainer {
+    flex-direction: column;
+  }
+
+  .description {
+    font-size: 0.9em;
+    margin: 1em;
+  }
+  .gridCell {
+    aspect-ratio: auto;
+    height: 60px;
+  }
+
+  .theGame {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .panel {
+    padding-left: 0;
+    order: -1;
+    width: 100%;
+  }
+
+  .scoreContainer {
+    justify-content: center;
+  }
+
+  .scoreCard {
+    width: 80px;
+    height: 60px;
+    margin: 1em;
+    padding-top: 0.5em;
+    text-align: center;
+  }
+
+  .score {
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+
+  .scoreCard p {
+    font-size: 0.6em;
+  }
+
+  .gameState p {
+    font-size: 0.9em;
+  }
+}
