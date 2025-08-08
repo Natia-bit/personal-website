@@ -7,8 +7,8 @@ import SectionCard from "@/components/common/SectionCard";
 const GRID_SIZE = 8;
 const DIFFICULTY_SETTINGS = {
   easy: { spawnRate: 1500, label: "Easy", totalBugsToAppear: 15 },
-  medium: { spawnRate: 1000, label: "Medium", totalBugsToAppear: 20 },
-  hard: { spawnRate: 500, label: "Hard", totalBugsToAppear: 30 },
+  medium: { spawnRate: 1300, label: "Medium", totalBugsToAppear: 20 },
+  hard: { spawnRate: 1200, label: "Hard", totalBugsToAppear: 30 },
 };
 
 export default function EasterEgg() {
@@ -19,7 +19,7 @@ export default function EasterEgg() {
   const [currentSpawnRate, setCurrentSpawnRate] = useState(0);
 
   const [activeBugIndex, setActiveBugIndex] = useState(-1);
-  const [bugRotation, setBugRotation] = useState(0); // New state for bug rotation
+  const [bugRotation, setBugRotation] = useState(0);
   const [isGameActive, setIsGameActive] = useState(false);
   const [isGamePaused, setIsGamePaused] = useState(false);
   const [message, setMessage] = useState("Choose a difficulty to begin!");
@@ -52,7 +52,7 @@ export default function EasterEgg() {
         if (!bugWasWhackedRef.current) {
           setBugsMissed((prev) => prev + 1);
         }
-      }, spawnRate - 300);
+      }, spawnRate - 100);
     }, spawnRate);
   };
 
@@ -98,7 +98,7 @@ export default function EasterEgg() {
     setActiveBugIndex(-1);
 
     const missed = totalBugsRef.current - bugsFound;
-    setMessage(`Total: ${totalBugsRef.current} bugs!`);
+    setMessage(`Choose a difficulty to begin!`);
   };
 
   const whackBug = (index) => {
@@ -145,15 +145,89 @@ export default function EasterEgg() {
             absurdity—because in the grand code of life, a bug or two just means
             the universe is still having a laugh.
           </p>
-          <cite className={styles.citing}>
-            Described with a dash of cosmic wit by
-            <a href="https://www.grok.com"> Grok </a>
-            <em>
-              created by <a href="https://www.x.ai"> xAI. </a>
-            </em>
-          </cite>
         </div>
 
+        <div className={styles.mainContainer}>
+          <div className={styles.theGame}>
+            <div
+              className={`${styles.gridContainer} ${
+                isGameActive && !isGamePaused ? "" : styles.gridCellDisabled
+              }`}
+              style={{ gridTemplateColumns: `repeat(${GRID_SIZE}, 1fr)` }}
+            >
+              {Array.from({ length: GRID_SIZE * GRID_SIZE }).map((_, index) => (
+                <div
+                  key={index}
+                  className={styles.gridCell}
+                  onClick={() => whackBug(index)}
+                >
+                  {activeBugIndex === index && (
+                    <div
+                      className={styles.bugBounceIn}
+                      style={{ transform: `rotate(${bugRotation}deg)` }}
+                    >
+                      <Bug width={40} height={40} />
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className={styles.panel}>
+            <div className={styles.gameState}>
+              {!isGameActive ? (
+                <div>
+                  <p>{message}</p>
+                  <div className={styles.difficultyButtons}>
+                    {Object.keys(DIFFICULTY_SETTINGS).map((key) => (
+                      <button
+                        key={key}
+                        onClick={() => startGame(key)}
+                        className={styles.button}
+                      >
+                        {DIFFICULTY_SETTINGS[key].label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <div>
+                  <p>{isGamePaused ? "Game Paused" : "Whack the bugs!"}</p>
+                  <div>
+                    <button
+                      onClick={isGamePaused ? resumeGame : pauseGame}
+                      className={`${styles.button} ${styles.buttonPause}`}
+                    >
+                      {isGamePaused ? "Resume" : "Pause"}
+                    </button>
+                    <button
+                      onClick={endGame}
+                      className={`${styles.button} ${styles.buttonEnd}`}
+                    >
+                      End Game
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            <div>
+              <div className={styles.scoreContainer}>
+                <div className={`${styles.scoreCard} ${styles.bugsFound}`}>
+                  <span className={styles.score}> {bugsFound}</span>
+                  <p>Bugs Whacked</p>
+                </div>
+
+                <div className={`${styles.scoreCard} ${styles.bugsMissed}`}>
+                  <span className={styles.score}> {bugsMissed}</span>
+                  <p>Bugs Missed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* 
         <div className={styles.gamePanel}>
           <div className={styles.scoreBoard}>
             <div className={styles.scoreText}>
@@ -166,46 +240,48 @@ export default function EasterEgg() {
             </div>
           </div>
 
-          {!isGameActive ? (
-            <div className={styles.messageSection}>
-              <p className={styles.messageText}>{message}</p>
-              <div className={styles.buttonGroup}>
-                {Object.keys(DIFFICULTY_SETTINGS).map((key) => (
+          <div>
+            {!isGameActive ? (
+              <div className={styles.messageSection}>
+                <p className={styles.messageText}>{message}</p>
+                <div className={styles.buttonGroup}>
+                  {Object.keys(DIFFICULTY_SETTINGS).map((key) => (
+                    <button
+                      key={key}
+                      onClick={() => startGame(key)}
+                      className={`${styles.button} ${
+                        styles[
+                          `button${key.charAt(0).toUpperCase() + key.slice(1)}`
+                        ]
+                      } ${difficulty === key ? styles.buttonSelected : ""}`}
+                    >
+                      {DIFFICULTY_SETTINGS[key].label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <div className={styles.messageSection}>
+                <p className={styles.messageText}>
+                  {isGamePaused ? "Game Paused" : "Whack the bugs!"}
+                </p>
+                <div className={styles.buttonGroup}>
                   <button
-                    key={key}
-                    onClick={() => startGame(key)}
-                    className={`${styles.button} ${
-                      styles[
-                        `button${key.charAt(0).toUpperCase() + key.slice(1)}`
-                      ]
-                    } ${difficulty === key ? styles.buttonSelected : ""}`}
+                    onClick={isGamePaused ? resumeGame : pauseGame}
+                    className={`${styles.button} ${styles.buttonPause}`}
                   >
-                    {DIFFICULTY_SETTINGS[key].label}
+                    {isGamePaused ? "Resume" : "Pause"}
                   </button>
-                ))}
+                  <button
+                    onClick={endGame}
+                    className={`${styles.button} ${styles.buttonEnd}`}
+                  >
+                    End Game
+                  </button>
+                </div>
               </div>
-            </div>
-          ) : (
-            <div className={styles.messageSection}>
-              <p className={styles.messageText}>
-                {isGamePaused ? "Game Paused" : "Whack the bugs!"}
-              </p>
-              <div className={styles.buttonGroup}>
-                <button
-                  onClick={isGamePaused ? resumeGame : pauseGame}
-                  className={`${styles.button} ${styles.buttonPause}`}
-                >
-                  {isGamePaused ? "Resume" : "Pause"}
-                </button>
-                <button
-                  onClick={endGame}
-                  className={`${styles.button} ${styles.buttonEnd}`}
-                >
-                  End Game
-                </button>
-              </div>
-            </div>
-          )}
+            )}
+          </div>
 
           <div className={styles.test}>
             <div
@@ -232,7 +308,7 @@ export default function EasterEgg() {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
       </SectionCard>
     </div>
   );
