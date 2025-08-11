@@ -165,7 +165,7 @@ export default function EasterEgg() {
                       className={styles.bugBounceIn}
                       style={{ transform: `rotate(${bugRotation}deg)` }}
                     >
-                      <Bug width={40} height={40} />
+                      <Bug width={40} height={40} outline="white" />
                     </div>
                   )}
                 </div>
@@ -226,88 +226,6 @@ export default function EasterEgg() {
             </div>
           </div>
         </div>
-        {/* 
-        <div className={styles.gamePanel}>
-          <div className={styles.scoreBoard}>
-            <div className={styles.scoreText}>
-              Bugs Whacked:
-              <span className={styles.scoreFound}> {bugsFound}</span>
-            </div>
-            <div className={styles.scoreText}>
-              Bugs Missed:
-              <span className={styles.scoreMissed}> {bugsMissed}</span>
-            </div>
-          </div>
-
-          <div>
-            {!isGameActive ? (
-              <div className={styles.messageSection}>
-                <p className={styles.messageText}>{message}</p>
-                <div className={styles.buttonGroup}>
-                  {Object.keys(DIFFICULTY_SETTINGS).map((key) => (
-                    <button
-                      key={key}
-                      onClick={() => startGame(key)}
-                      className={`${styles.button} ${
-                        styles[
-                          `button${key.charAt(0).toUpperCase() + key.slice(1)}`
-                        ]
-                      } ${difficulty === key ? styles.buttonSelected : ""}`}
-                    >
-                      {DIFFICULTY_SETTINGS[key].label}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            ) : (
-              <div className={styles.messageSection}>
-                <p className={styles.messageText}>
-                  {isGamePaused ? "Game Paused" : "Whack the bugs!"}
-                </p>
-                <div className={styles.buttonGroup}>
-                  <button
-                    onClick={isGamePaused ? resumeGame : pauseGame}
-                    className={`${styles.button} ${styles.buttonPause}`}
-                  >
-                    {isGamePaused ? "Resume" : "Pause"}
-                  </button>
-                  <button
-                    onClick={endGame}
-                    className={`${styles.button} ${styles.buttonEnd}`}
-                  >
-                    End Game
-                  </button>
-                </div>
-              </div>
-            )}
-          </div>
-
-          <div className={styles.test}>
-            <div
-              className={`${styles.gridContainer} ${
-                isGameActive && !isGamePaused ? "" : styles.gridCellDisabled
-              }`}
-              style={{ gridTemplateColumns: `repeat(${GRID_SIZE}, 1fr)` }}
-            >
-              {Array.from({ length: GRID_SIZE * GRID_SIZE }).map((_, index) => (
-                <div
-                  key={index}
-                  className={styles.gridCell}
-                  onClick={() => whackBug(index)}
-                >
-                  {activeBugIndex === index && (
-                    <div
-                      className={styles.bugBounceIn}
-                      style={{ transform: `rotate(${bugRotation}deg)` }}
-                    >
-                      <Bug width={40} height={40} />
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div> */}
       </SectionCard>
     </div>
   );
