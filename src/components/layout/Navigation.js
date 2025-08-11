@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import styles from "./Navigation.module.css";
 import Bug from "../common/Bug";
 
@@ -14,8 +15,14 @@ const sections = [
 
 export default function Navigation() {
   const [activeSection, setActiveSection] = useState("");
+  const pathname = usePathname();
 
   useEffect(() => {
+    if (pathname !== "/") {
+      setActiveSection("");
+      return;
+    }
+
     const handleScroll = () => {
       const offsets = sections.map(({ id }) => {
         const el = document.getElementById(id);
@@ -33,7 +40,7 @@ export default function Navigation() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [pathname]);
 
   return (
     <ul className={styles.navList}>
@@ -48,7 +55,7 @@ export default function Navigation() {
         </li>
       ))}
 
-      <Link href="/easter-egg" className={styles.test}>
+      <Link href="/easter-egg" className={styles.easterEgg}>
         <div className={styles.glitchWrapper}>
           <Bug width={60} height={60} className={styles.bug} />
         </div>

@@ -15,10 +15,10 @@
   column-gap: 3rem;
 }
 
-.skillList > * {
+/* .skillList > * {
   break-inside: avoid;
   page-break-inside: avoid;
-}
+} */
 
 .experienceContainerWrapper {
   margin-left: auto;
