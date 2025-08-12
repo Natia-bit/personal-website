@@ -6,6 +6,7 @@
   border-radius: 200px 5px 200px 5px / 5px 200px 5px 200px;
   font-size: 0.95rem;
   padding: 0 1rem 1rem 1rem;
+  z-index: 1;
 }
 
 .main {
@@ -52,10 +53,15 @@
 
 .techUsed {
   display: flex;
-  /* flex-wrap: wrap; */
   flex-direction: row;
   justify-content: center;
   gap: 0.7rem;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
 }
 
 .toggleButton {
@@ -68,12 +74,12 @@
   -webkit-user-select: none;
   touch-action: manipulation;
 
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
 
   width: 30px;
-  height: 30px;
+  height: 30px; */
 }
 
 .toggleIcon {
@@ -95,8 +101,8 @@
   z-index: -1;
   position: absolute;
   height: 100%;
-  top: 5px;
-  left: 5px;
+  top: 6px;
+  left: 6px;
   transition: 0.2s;
 }
 
@@ -107,7 +113,7 @@
 
 @media (min-width: 768px) {
   .toggleButton {
-    padding: 6px 25px 6px;
+    padding: 7px 20px 7px;
   }
 }
 
@@ -144,5 +150,10 @@
 
   .company {
     font-size: 1.4rem;
+  }
+
+  .toggleButton:after {
+    top: 4px;
+    left: 4px;
   }
 }
