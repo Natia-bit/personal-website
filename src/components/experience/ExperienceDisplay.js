@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import TechnologiesUsed from "../common/TechnologiesUsed";
+import Image from "next/image";
 import styles from "./ExperienceDisplay.module.css";
 
 export default function ExperienceDisplay({
@@ -49,9 +50,15 @@ export default function ExperienceDisplay({
       {expanded && (
         <div>
           <p className={styles.details}>
-            <span>{company}</span>
-            <span> | </span>
-            <span> {location}</span>
+            <span>
+              <Image
+                src="/common/location.svg"
+                alt="location"
+                width={15}
+                height={15}
+              ></Image>
+              {location}
+            </span>
           </p>
           <ul className={styles.description}>
             {description.map((item, idx) => (
