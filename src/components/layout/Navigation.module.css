@@ -4,6 +4,8 @@
   flex-direction: column;
   list-style: none;
   cursor: pointer !important;
+  width: 100%;
+  height: auto;
 }
 
 .navItem {

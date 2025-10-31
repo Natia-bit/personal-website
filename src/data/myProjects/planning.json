@@ -1,16 +1,5 @@
 [
   {
-    "name": "Bakery website",
-    "category": "Front End",
-    "description": "Informational websites with inquiry capabilities, showcasing products and inquiries.",
-    "techUsed": [
-      { "skill": "React", "iconSrc": "/skills/react.png" },
-      { "skill": "JavaScript", "iconSrc": "/skills/javascript.png" },
-      { "skill": "CSS", "iconSrc": "/skills/css.png" },
-      { "skill": "HTML", "iconSrc": "/skills/html.png" }
-    ]
-  },
-  {
     "name": "Headstart to Learning",
     "category": "Full Stack",
     "description": "A website for an Early Childhood Development (ECD) teacher, rooted in Montessori values. This platform offers parents with essential information, alongside convenient inquiry and order options for tailored activity packages.",
