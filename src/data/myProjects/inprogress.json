@@ -27,5 +27,19 @@
       { "skill": "CSS", "iconSrc": "/skills/css.png" },
       { "skill": "HTML", "iconSrc": "/skills/html.png" }
     ]
+  },
+  {
+    "name": "Cake Pops By Leanne",
+    "gitLink": "https://github.com/Natia-bit/cake-pops",
+    "imgSrcOne": "/skills/github.png",
+    "category": "Front End",
+    "bugs": "true",
+    "description": "Informational websites with inquiry capabilities, showcasing products and inquiries.",
+    "techUsed": [
+      { "skill": "React", "iconSrc": "/skills/react.png" },
+      { "skill": "JavaScript", "iconSrc": "/skills/javascript.png" },
+      { "skill": "CSS", "iconSrc": "/skills/css.png" },
+      { "skill": "HTML", "iconSrc": "/skills/html.png" }
+    ]
   }
 ]
